@@ -1,0 +1,1249 @@
+2020-03-30 11:05:45.542 [main][INFO ] c.a.customs.sync.worker.App          org.springframework.boot.StartupInfoLogger[50]: Starting App v1.0 on LAPTOP-FM749B11 with PID 13964 (started by Lenovo in D:\amibook\接收程序)
+2020-03-30 11:05:45.542 [main][DEBUG] c.a.customs.sync.worker.App          org.springframework.boot.StartupInfoLogger[53]: Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2020-03-30 11:05:45.542 [main][INFO ] c.a.customs.sync.worker.App          org.springframework.boot.SpringApplication[663]: The following profiles are active: prod
+2020-03-30 11:05:46.713 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-abstractions-0.1.0-SNAPSHOT.jar!/com/x3platform/digitalnumber/mappers/DigitalNumberMapper.class]
+2020-03-30 11:05:46.713 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-apps-0.1.0-SNAPSHOT.jar!/com/x3platform/apps/mappers/ApplicationSettingGroupMapper.class]
+2020-03-30 11:05:46.713 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-apps-0.1.0-SNAPSHOT.jar!/com/x3platform/apps/mappers/ApplicationMethodMapper.class]
+2020-03-30 11:05:46.713 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-apps-0.1.0-SNAPSHOT.jar!/com/x3platform/apps/mappers/ApplicationSettingMapper.class]
+2020-03-30 11:05:46.713 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-apps-0.1.0-SNAPSHOT.jar!/com/x3platform/apps/mappers/ApplicationEventMapper.class]
+2020-03-30 11:05:46.713 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-apps-0.1.0-SNAPSHOT.jar!/com/x3platform/apps/mappers/ApplicationFeatureMapper.class]
+2020-03-30 11:05:46.713 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-apps-0.1.0-SNAPSHOT.jar!/com/x3platform/apps/mappers/ApplicationOptionMapper.class]
+2020-03-30 11:05:46.729 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-apps-0.1.0-SNAPSHOT.jar!/com/x3platform/apps/mappers/ApplicationMapper.class]
+2020-03-30 11:05:46.729 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-apps-0.1.0-SNAPSHOT.jar!/com/x3platform/apps/mappers/ApplicationMenuMapper.class]
+2020-03-30 11:05:46.729 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-connect-0.1.0-SNAPSHOT.jar!/com/x3platform/connect/mappers/ConnectCallMapper.class]
+2020-03-30 11:05:46.729 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-connect-0.1.0-SNAPSHOT.jar!/com/x3platform/connect/mappers/ConnectAuthorizationCodeMapper.class]
+2020-03-30 11:05:46.729 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-connect-0.1.0-SNAPSHOT.jar!/com/x3platform/connect/mappers/ConnectMapper.class]
+2020-03-30 11:05:46.729 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-connect-0.1.0-SNAPSHOT.jar!/com/x3platform/connect/mappers/ConnectAccessTokenMapper.class]
+2020-03-30 11:05:46.729 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-membership-0.1.0-SNAPSHOT.jar!/com/x3platform/membership/mappers/StandardRoleMapper.class]
+2020-03-30 11:05:46.729 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-membership-0.1.0-SNAPSHOT.jar!/com/x3platform/membership/mappers/AccountBindingMapper.class]
+2020-03-30 11:05:46.729 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-membership-0.1.0-SNAPSHOT.jar!/com/x3platform/membership/mappers/GroupMapper.class]
+2020-03-30 11:05:46.729 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-membership-0.1.0-SNAPSHOT.jar!/com/x3platform/membership/mappers/StandardOrganizationUnitMapper.class]
+2020-03-30 11:05:46.729 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-membership-0.1.0-SNAPSHOT.jar!/com/x3platform/membership/mappers/AccountLogMapper.class]
+2020-03-30 11:05:46.729 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-membership-0.1.0-SNAPSHOT.jar!/com/x3platform/membership/mappers/OrganizationMapper.class]
+2020-03-30 11:05:46.729 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-membership-0.1.0-SNAPSHOT.jar!/com/x3platform/membership/mappers/AccountMapper.class]
+2020-03-30 11:05:46.729 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-membership-0.1.0-SNAPSHOT.jar!/com/x3platform/membership/mappers/RoleMapper.class]
+2020-03-30 11:05:46.729 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-membership-0.1.0-SNAPSHOT.jar!/com/x3platform/membership/mappers/OrganizationUnitMapper.class]
+2020-03-30 11:05:46.729 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-membership-0.1.0-SNAPSHOT.jar!/com/x3platform/membership/mappers/UserMapper.class]
+2020-03-30 11:05:46.744 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-membership-0.1.0-SNAPSHOT.jar!/com/x3platform/membership/mappers/AuthorizationObjectMapper.class]
+2020-03-30 11:05:46.744 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-sessions-0.1.0-SNAPSHOT.jar!/com/x3platform/sessions/mappers/TicketMapper.class]
+2020-03-30 11:05:46.744 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-sync-0.1.0-SNAPSHOT.jar!/com/x3platform/sync/mappers/SyncQueueMapper.class]
+2020-03-30 11:05:46.744 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-sync-0.1.0-SNAPSHOT.jar!/com/x3platform/sync/mappers/SyncSettingMapper.class]
+2020-03-30 11:05:46.744 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-sync-0.1.0-SNAPSHOT.jar!/com/x3platform/sync/mappers/SyncPkgMapper.class]
+2020-03-30 11:05:46.744 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-abstractions-0.1.0-SNAPSHOT.jar!/com/x3platform/data/storages/mappers/DataStorageNodeMapper.class]
+2020-03-30 11:05:46.744 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-abstractions-0.1.0-SNAPSHOT.jar!/com/x3platform/data/storages/mappers/DataStorageSchemaMapper.class]
+2020-03-30 11:05:46.744 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-abstractions-0.1.0-SNAPSHOT.jar!/com/x3platform/security/authority/mappers/AuthorityMapper.class]
+2020-03-30 11:05:46.760 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-abstractions-0.1.0-SNAPSHOT.jar!/com/x3platform/security/verificationcode/mappers/VerificationCodeMapper.class]
+2020-03-30 11:05:46.760 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/amiintellect-customs-b2b-1.0.0-SNAPSHOT.jar!/com/amiintellect/customs/b2b/mappers/B2bImportMapper.class]
+2020-03-30 11:05:46.760 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/amiintellect-customs-b2b-1.0.0-SNAPSHOT.jar!/com/amiintellect/customs/b2b/mappers/B2bMessageHeadMapper.class]
+2020-03-30 11:05:46.760 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/amiintellect-customs-b2b-1.0.0-SNAPSHOT.jar!/com/amiintellect/customs/b2b/mappers/SasInvtHeadTypeMapper.class]
+2020-03-30 11:05:46.760 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/amiintellect-customs-b2b-1.0.0-SNAPSHOT.jar!/com/amiintellect/customs/b2b/mappers/SasInvtListTypeMapper.class]
+2020-03-30 11:05:46.776 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'digitalNumberMapper' and 'com.x3platform.digitalnumber.mappers.DigitalNumberMapper' mapperInterface
+2020-03-30 11:05:46.776 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'digitalNumberMapper'.
+2020-03-30 11:05:46.776 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'applicationSettingGroupMapper' and 'com.x3platform.apps.mappers.ApplicationSettingGroupMapper' mapperInterface
+2020-03-30 11:05:46.776 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'applicationSettingGroupMapper'.
+2020-03-30 11:05:46.776 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'applicationMethodMapper' and 'com.x3platform.apps.mappers.ApplicationMethodMapper' mapperInterface
+2020-03-30 11:05:46.776 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'applicationMethodMapper'.
+2020-03-30 11:05:46.776 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'applicationSettingMapper' and 'com.x3platform.apps.mappers.ApplicationSettingMapper' mapperInterface
+2020-03-30 11:05:46.776 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'applicationSettingMapper'.
+2020-03-30 11:05:46.776 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'applicationEventMapper' and 'com.x3platform.apps.mappers.ApplicationEventMapper' mapperInterface
+2020-03-30 11:05:46.776 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'applicationEventMapper'.
+2020-03-30 11:05:46.776 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'applicationFeatureMapper' and 'com.x3platform.apps.mappers.ApplicationFeatureMapper' mapperInterface
+2020-03-30 11:05:46.776 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'applicationFeatureMapper'.
+2020-03-30 11:05:46.776 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'applicationOptionMapper' and 'com.x3platform.apps.mappers.ApplicationOptionMapper' mapperInterface
+2020-03-30 11:05:46.776 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'applicationOptionMapper'.
+2020-03-30 11:05:46.791 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'applicationMapper' and 'com.x3platform.apps.mappers.ApplicationMapper' mapperInterface
+2020-03-30 11:05:46.791 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'applicationMapper'.
+2020-03-30 11:05:46.791 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'applicationMenuMapper' and 'com.x3platform.apps.mappers.ApplicationMenuMapper' mapperInterface
+2020-03-30 11:05:46.791 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'applicationMenuMapper'.
+2020-03-30 11:05:46.791 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'connectCallMapper' and 'com.x3platform.connect.mappers.ConnectCallMapper' mapperInterface
+2020-03-30 11:05:46.791 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'connectCallMapper'.
+2020-03-30 11:05:46.791 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'connectAuthorizationCodeMapper' and 'com.x3platform.connect.mappers.ConnectAuthorizationCodeMapper' mapperInterface
+2020-03-30 11:05:46.791 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'connectAuthorizationCodeMapper'.
+2020-03-30 11:05:46.791 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'connectMapper' and 'com.x3platform.connect.mappers.ConnectMapper' mapperInterface
+2020-03-30 11:05:46.807 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'connectMapper'.
+2020-03-30 11:05:46.807 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'connectAccessTokenMapper' and 'com.x3platform.connect.mappers.ConnectAccessTokenMapper' mapperInterface
+2020-03-30 11:05:46.807 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'connectAccessTokenMapper'.
+2020-03-30 11:05:46.807 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'standardRoleMapper' and 'com.x3platform.membership.mappers.StandardRoleMapper' mapperInterface
+2020-03-30 11:05:46.807 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'standardRoleMapper'.
+2020-03-30 11:05:46.807 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'accountBindingMapper' and 'com.x3platform.membership.mappers.AccountBindingMapper' mapperInterface
+2020-03-30 11:05:46.807 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'accountBindingMapper'.
+2020-03-30 11:05:46.807 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'groupMapper' and 'com.x3platform.membership.mappers.GroupMapper' mapperInterface
+2020-03-30 11:05:46.807 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'groupMapper'.
+2020-03-30 11:05:46.807 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'standardOrganizationUnitMapper' and 'com.x3platform.membership.mappers.StandardOrganizationUnitMapper' mapperInterface
+2020-03-30 11:05:46.823 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'standardOrganizationUnitMapper'.
+2020-03-30 11:05:46.823 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'accountLogMapper' and 'com.x3platform.membership.mappers.AccountLogMapper' mapperInterface
+2020-03-30 11:05:46.823 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'accountLogMapper'.
+2020-03-30 11:05:46.823 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'organizationMapper' and 'com.x3platform.membership.mappers.OrganizationMapper' mapperInterface
+2020-03-30 11:05:46.823 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'organizationMapper'.
+2020-03-30 11:05:46.823 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'accountMapper' and 'com.x3platform.membership.mappers.AccountMapper' mapperInterface
+2020-03-30 11:05:46.823 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'accountMapper'.
+2020-03-30 11:05:46.823 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'roleMapper' and 'com.x3platform.membership.mappers.RoleMapper' mapperInterface
+2020-03-30 11:05:46.838 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'roleMapper'.
+2020-03-30 11:05:46.838 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'organizationUnitMapper' and 'com.x3platform.membership.mappers.OrganizationUnitMapper' mapperInterface
+2020-03-30 11:05:46.838 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'organizationUnitMapper'.
+2020-03-30 11:05:46.838 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'userMapper' and 'com.x3platform.membership.mappers.UserMapper' mapperInterface
+2020-03-30 11:05:46.838 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
+2020-03-30 11:05:46.838 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'authorizationObjectMapper' and 'com.x3platform.membership.mappers.AuthorizationObjectMapper' mapperInterface
+2020-03-30 11:05:46.838 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'authorizationObjectMapper'.
+2020-03-30 11:05:46.838 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'ticketMapper' and 'com.x3platform.sessions.mappers.TicketMapper' mapperInterface
+2020-03-30 11:05:46.838 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'ticketMapper'.
+2020-03-30 11:05:46.838 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'syncQueueMapper' and 'com.x3platform.sync.mappers.SyncQueueMapper' mapperInterface
+2020-03-30 11:05:46.838 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'syncQueueMapper'.
+2020-03-30 11:05:46.838 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'syncSettingMapper' and 'com.x3platform.sync.mappers.SyncSettingMapper' mapperInterface
+2020-03-30 11:05:46.838 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'syncSettingMapper'.
+2020-03-30 11:05:46.838 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'syncPkgMapper' and 'com.x3platform.sync.mappers.SyncPkgMapper' mapperInterface
+2020-03-30 11:05:46.854 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'syncPkgMapper'.
+2020-03-30 11:05:46.854 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'dataStorageNodeMapper' and 'com.x3platform.data.storages.mappers.DataStorageNodeMapper' mapperInterface
+2020-03-30 11:05:46.854 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'dataStorageNodeMapper'.
+2020-03-30 11:05:46.854 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'dataStorageSchemaMapper' and 'com.x3platform.data.storages.mappers.DataStorageSchemaMapper' mapperInterface
+2020-03-30 11:05:46.854 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'dataStorageSchemaMapper'.
+2020-03-30 11:05:46.854 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'authorityMapper' and 'com.x3platform.security.authority.mappers.AuthorityMapper' mapperInterface
+2020-03-30 11:05:46.854 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'authorityMapper'.
+2020-03-30 11:05:46.854 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'verificationCodeMapper' and 'com.x3platform.security.verificationcode.mappers.VerificationCodeMapper' mapperInterface
+2020-03-30 11:05:46.854 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'verificationCodeMapper'.
+2020-03-30 11:05:46.854 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'b2bImportMapper' and 'com.amiintellect.customs.b2b.mappers.B2bImportMapper' mapperInterface
+2020-03-30 11:05:46.854 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'b2bImportMapper'.
+2020-03-30 11:05:46.854 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'b2bMessageHeadMapper' and 'com.amiintellect.customs.b2b.mappers.B2bMessageHeadMapper' mapperInterface
+2020-03-30 11:05:46.854 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'b2bMessageHeadMapper'.
+2020-03-30 11:05:46.869 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'sasInvtHeadTypeMapper' and 'com.amiintellect.customs.b2b.mappers.SasInvtHeadTypeMapper' mapperInterface
+2020-03-30 11:05:46.869 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'sasInvtHeadTypeMapper'.
+2020-03-30 11:05:46.869 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'sasInvtListTypeMapper' and 'com.amiintellect.customs.b2b.mappers.SasInvtListTypeMapper' mapperInterface
+2020-03-30 11:05:46.869 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'sasInvtListTypeMapper'.
+2020-03-30 11:05:46.869 [main][INFO ] com.x3platform.InternalLogger        com.x3platform.data.DynamicDataSourceRegister[97]: Dynamic DataSource Registry
+2020-03-30 11:05:49.690 [main][DEBUG] o.m.spring.SqlSessionFactoryBean     org.mybatis.spring.SqlSessionFactoryBean[534]: Property 'mapperLocations' was not specified or no matching resources found
+2020-03-30 11:05:49.955 [main][INFO ] com.x3platform.InternalLogger        com.x3platform.SpringContext[18]: Spring ApplicationContext registered
+2020-03-30 11:05:50.002 [main][INFO ] com.x3platform.InternalLogger        com.amiintellect.customs.sync.worker.config.RabbitConfig[68]: RabbitMQ 开始建立连接。
+2020-03-30 11:05:50.018 [main][INFO ] com.x3platform.InternalLogger        com.amiintellect.customs.sync.worker.config.RabbitConfig[77]: RabbitMQ 建立完成。
+2020-03-30 11:05:51.912 [main][INFO ] com.x3platform.InternalLogger        com.x3platform.KernelContext[101]: AuthenticationManagementType:com.x3platform.security.authentication.LocalAuthenticationManagement
+2020-03-30 11:06:05.225 [main][INFO ] com.x3platform.InternalLogger        com.amiintellect.customs.sync.worker.listeners.SchedulerApplicationListener[32]: Scheduler:scheduler 已启动。
+2020-03-30 11:06:06.048 [main][INFO ] com.x3platform.InternalLogger        com.amiintellect.customs.sync.worker.listeners.SchedulerApplicationListener[44]: job name:com.amiintellect.customs.fms.jobs.FmsremindJob, state:NORMAL, next fire time:2020-03-11 22:15:00, previous fire time:2020-03-11 22:15:00.
+2020-03-30 11:06:06.406 [main][INFO ] com.x3platform.InternalLogger        com.amiintellect.customs.sync.worker.listeners.SchedulerApplicationListener[44]: job name:com.x3platform.quartz.jobs.TimedEchoJob, state:PAUSED, next fire time:2020-01-18 09:21:00, previous fire time:2020-01-18 09:21:00.
+2020-03-30 11:06:06.763 [main][INFO ] com.x3platform.InternalLogger        com.amiintellect.customs.sync.worker.listeners.SchedulerApplicationListener[44]: job name:com.amiintellect.customs.fms.jobs.FmsTimingBillDetails, state:NORMAL, next fire time:2020-03-11 22:15:00, previous fire time:2020-03-11 22:15:00.
+2020-03-30 11:06:07.116 [main][INFO ] com.x3platform.InternalLogger        com.amiintellect.customs.sync.worker.listeners.SchedulerApplicationListener[44]: job name:com.amiintellect.customs.fms.jobs.FmsTimingJob, state:NORMAL, next fire time:2020-03-11 22:00:23, previous fire time:2020-03-11 22:00:23.
+2020-03-30 11:06:07.467 [main][INFO ] com.x3platform.InternalLogger        com.amiintellect.customs.sync.worker.listeners.SchedulerApplicationListener[44]: job name:com.amiintellect.customs.b2b.jobs.AnJieReceiptJob, state:NORMAL, next fire time:2020-03-11 22:14:00, previous fire time:2020-03-11 22:14:00.
+2020-03-30 11:06:07.470 [main][INFO ] com.x3platform.InternalLogger        com.amiintellect.customs.b2b.plugins.HuaDongImportListenPluginImpl[133]: RabbitMQ 获取到连接参数:{isCloud=false, rabbitAddress=rabbit.amiintellect.com, rabbitPort=5672, rabbitPassword=rabbit#6f4b83a6, rabbitUsername=rabbitadmin, rabbitVirtualHost=/, syncReveiceQueneName=10000003_5006640002_in_test}
+2020-03-30 11:06:07.470 [main][INFO ] com.x3platform.InternalLogger        com.amiintellect.customs.b2b.plugins.HuaDongImportListenPluginImpl[135]: RabbitMQ 开始配置参数.
+2020-03-30 11:06:07.470 [main][INFO ] com.x3platform.InternalLogger        com.amiintellect.customs.b2b.plugins.HuaDongImportListenPluginImpl[142]: RabbitMQ 配置参数完成.
+2020-03-30 11:06:07.489 [main][ERROR] com.x3platform.InternalLogger        com.amiintellect.customs.b2b.plugins.HuaDongImportListenPluginImpl[245]: java.lang.Exception
+java.net.UnknownHostException: rabbit.amiintellect.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at com.rabbitmq.client.DnsRecordIpAddressResolver.resolveIpAddresses(DnsRecordIpAddressResolver.java:83)
+	at com.rabbitmq.client.DnsRecordIpAddressResolver.getAddresses(DnsRecordIpAddressResolver.java:73)
+	at com.rabbitmq.client.impl.recovery.RecoveryAwareAMQConnectionFactory.newConnection(RecoveryAwareAMQConnectionFactory.java:58)
+	at com.rabbitmq.client.impl.recovery.AutorecoveringConnection.init(AutorecoveringConnection.java:99)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:948)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:907)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:865)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1018)
+	at com.amiintellect.customs.b2b.plugins.HuaDongImportListenPluginImpl.start(HuaDongImportListenPluginImpl.java:145)
+	at com.amiintellect.customs.sync.worker.listeners.PluginApplicationListener.onApplicationEvent(PluginApplicationListener.java:35)
+	at com.amiintellect.customs.sync.worker.listeners.PluginApplicationListener.onApplicationEvent(PluginApplicationListener.java:16)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:400)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:354)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:888)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:161)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at com.amiintellect.customs.sync.worker.App.main(App.java:65)
+2020-03-30 11:06:07.547 [main][INFO ] c.a.customs.sync.worker.App          org.springframework.boot.StartupInfoLogger[59]: Started App in 22.458 seconds (JVM running for 25.302)
+2020-03-30 11:06:07.552 [main][INFO ] com.x3platform.InternalLogger        com.amiintellect.customs.sync.worker.App[70]: Application com.amiintellect.customs.sync.worker.App 启动成功, 应用端口 0, 耗时 23.355 秒, 加载 Spring 组件 391 个.
+Application Path: /D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/.
+Application Version: 1.0.0-build.
+2020-03-30 11:06:15.825 [messageContainer-3][INFO ] com.x3platform.InternalLogger        com.amiintellect.customs.sync.worker.config.RabbitConfig$1[105]: Consume receive msg: {"data":[{"belong_company_name":"","start_position":"","regular_expression":"","dimset":"","key_word":"料1号","y_max":0,"type":"goods_info","x_min":0,"content_max":0,"number":"","content_rule":"","get_type":"","pz_type":"0","file_type":"way_bill","y_min":0,"col_multiple":"","x_max":0,"id":"d4d8238e-27d7-429d-b47d-91ff00f8f09f","aligned":"","get_type_str":"","key_position":1,"file_name":"运单文件","map_name":"mark_part","customs_broker_id":"00000000-0000-0000-0000-000000000001","col_digit":"","is_one_use":"0","modified_date":"2020-03-30 10:21:43","keyword_type":1,"last_update_time":"2020-03-30 10:21:43","login_user":"管理员","is_use_python":"1","company_name":"bgd001","organization_id":"00000000-0000-0000-0000-000000000001","template_id":"","content_position":"下","status":1}],"data_source_name":"ami-customs","table_name":"ocr_key_set_config"}
+2020-03-30 11:06:15.918 [messageContainer-3][INFO ] com.x3platform.InternalLogger        com.x3platform.sync.SyncContext[106]: 应用 sync 正在加载。
+2020-03-30 11:06:15.934 [messageContainer-3][INFO ] com.x3platform.InternalLogger        com.x3platform.sync.SyncContext[117]: 应用 sync 已成功加载。
+2020-03-30 11:06:15.996 [messageContainer-3][DEBUG] com.x3platform.InternalLogger        com.x3platform.sync.services.impl.SyncPkgServiceImpl[514]: sync data:{table name:ocr_key_set_config, row count:1}.
+2020-03-30 11:06:15.996 [messageContainer-3][DEBUG] org.mybatis.spring.SqlSessionUtils   org.mybatis.spring.SqlSessionUtils[97]: Creating a new SqlSession
+2020-03-30 11:06:16.012 [messageContainer-3][DEBUG] org.mybatis.spring.SqlSessionUtils   org.mybatis.spring.SqlSessionUtils[148]: SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@108b04] was not registered for synchronization because synchronization is not active
+2020-03-30 11:06:16.630 [messageContainer-3][DEBUG] o.m.s.t.SpringManagedTransaction     org.mybatis.spring.transaction.SpringManagedTransaction[87]: JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a9d84b] will not be managed by Spring
+2020-03-30 11:06:16.634 [messageContainer-3][DEBUG] c.x.s.mappers.SyncPkgMapper.syncData org.apache.ibatis.logging.jdbc.BaseJdbcLogger[159]: ==>  Preparing: INSERT INTO ocr_key_set_config ( belong_company_name , start_position , regular_expression , dimset , key_word , y_max , type , x_min , content_max , number , content_rule , get_type , pz_type , file_type , y_min , col_multiple , x_max , id , aligned , get_type_str , key_position , file_name , map_name , customs_broker_id , col_digit , is_one_use , modified_date , keyword_type , last_update_time , login_user , is_use_python , company_name , organization_id , template_id , content_position , status ) VALUES ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) ON DUPLICATE KEY UPDATE belong_company_name = ? , start_position = ? , regular_expression = ? , dimset = ? , key_word = ? , y_max = ? , type = ? , x_min = ? , content_max = ? , number = ? , content_rule = ? , get_type = ? , pz_type = ? , file_type = ? , y_min = ? , col_multiple = ? , x_max = ? , aligned = ? , get_type_str = ? , key_position = ? , file_name = ? , map_name = ? , customs_broker_id = ? , col_digit = ? , is_one_use = ? , modified_date = ? , keyword_type = ? , last_update_time = ? , login_user = ? , is_use_python = ? , company_name = ? , organization_id = ? , template_id = ? , content_position = ? , status = ? 
+2020-03-30 11:06:16.651 [messageContainer-3][DEBUG] c.x.s.mappers.SyncPkgMapper.syncData org.apache.ibatis.logging.jdbc.BaseJdbcLogger[159]: ==> Parameters: (String), (String), (String), (String), 料1号(String), 0(Integer), goods_info(String), 0(Integer), 0(Integer), (String), (String), (String), 0(String), way_bill(String), 0(Integer), (String), 0(Integer), d4d8238e-27d7-429d-b47d-91ff00f8f09f(String), (String), (String), 1(Integer), 运单文件(String), mark_part(String), 00000000-0000-0000-0000-000000000001(String), (String), 0(String), 2020-03-30 10:21:43(String), 1(Integer), 2020-03-30 10:21:43(String), 管理员(String), 1(String), bgd001(String), 00000000-0000-0000-0000-000000000001(String), (String), 下(String), 1(Integer), (String), (String), (String), (String), 料1号(String), 0(Integer), goods_info(String), 0(Integer), 0(Integer), (String), (String), (String), 0(String), way_bill(String), 0(Integer), (String), 0(Integer), (String), (String), 1(Integer), 运单文件(String), mark_part(String), 00000000-0000-0000-0000-000000000001(String), (String), 0(String), 2020-03-30 10:21:43(String), 1(Integer), 2020-03-30 10:21:43(String), 管理员(String), 1(String), bgd001(String), 00000000-0000-0000-0000-000000000001(String), (String), 下(String), 1(Integer)
+2020-03-30 11:06:16.774 [messageContainer-3][DEBUG] c.x.s.mappers.SyncPkgMapper.syncData org.apache.ibatis.logging.jdbc.BaseJdbcLogger[159]: <==    Updates: 1
+2020-03-30 11:06:16.777 [messageContainer-3][DEBUG] org.mybatis.spring.SqlSessionUtils   org.mybatis.spring.SqlSessionUtils[191]: Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@108b04]
+2020-03-30 11:06:16.782 [messageContainer-3][DEBUG] com.x3platform.InternalLogger        com.x3platform.sync.services.impl.SyncPkgServiceImpl[532]: sync data:{table name:ocr_key_set_config} finished.
+2020-03-30 11:06:16.783 [messageContainer-3][INFO ] com.x3platform.InternalLogger        com.amiintellect.customs.sync.worker.config.RabbitConfig$1[105]: Consume receive msg: {"data":[{"belong_company_name":"","start_position":"","regular_expression":"","dimset":"","key_word":"料11号","y_max":0,"type":"goods_info","x_min":0,"content_max":0,"number":"","content_rule":"","get_type":"","pz_type":"0","file_type":"way_bill","y_min":0,"col_multiple":"","x_max":0,"id":"d4d8238e-27d7-429d-b47d-91ff00f8f09f","aligned":"","get_type_str":"","key_position":1,"file_name":"运单文件","map_name":"mark_part","customs_broker_id":"00000000-0000-0000-0000-000000000001","col_digit":"","is_one_use":"0","modified_date":"2020-03-30 11:03:37","keyword_type":1,"last_update_time":"2020-03-30 11:03:36","login_user":"管理员","is_use_python":"1","company_name":"bgd001","organization_id":"00000000-0000-0000-0000-000000000001","template_id":"","content_position":"下","status":1}],"data_source_name":"ami-customs","table_name":"ocr_key_set_config"}
+2020-03-30 11:06:16.784 [messageContainer-3][DEBUG] com.x3platform.InternalLogger        com.x3platform.sync.services.impl.SyncPkgServiceImpl[514]: sync data:{table name:ocr_key_set_config, row count:1}.
+2020-03-30 11:06:16.784 [messageContainer-3][DEBUG] org.mybatis.spring.SqlSessionUtils   org.mybatis.spring.SqlSessionUtils[97]: Creating a new SqlSession
+2020-03-30 11:06:16.784 [messageContainer-3][DEBUG] org.mybatis.spring.SqlSessionUtils   org.mybatis.spring.SqlSessionUtils[148]: SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fcbdcb] was not registered for synchronization because synchronization is not active
+2020-03-30 11:06:16.787 [messageContainer-3][DEBUG] o.m.s.t.SpringManagedTransaction     org.mybatis.spring.transaction.SpringManagedTransaction[87]: JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a9d84b] will not be managed by Spring
+2020-03-30 11:06:16.788 [messageContainer-3][DEBUG] c.x.s.mappers.SyncPkgMapper.syncData org.apache.ibatis.logging.jdbc.BaseJdbcLogger[159]: ==>  Preparing: INSERT INTO ocr_key_set_config ( belong_company_name , start_position , regular_expression , dimset , key_word , y_max , type , x_min , content_max , number , content_rule , get_type , pz_type , file_type , y_min , col_multiple , x_max , id , aligned , get_type_str , key_position , file_name , map_name , customs_broker_id , col_digit , is_one_use , modified_date , keyword_type , last_update_time , login_user , is_use_python , company_name , organization_id , template_id , content_position , status ) VALUES ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) ON DUPLICATE KEY UPDATE belong_company_name = ? , start_position = ? , regular_expression = ? , dimset = ? , key_word = ? , y_max = ? , type = ? , x_min = ? , content_max = ? , number = ? , content_rule = ? , get_type = ? , pz_type = ? , file_type = ? , y_min = ? , col_multiple = ? , x_max = ? , aligned = ? , get_type_str = ? , key_position = ? , file_name = ? , map_name = ? , customs_broker_id = ? , col_digit = ? , is_one_use = ? , modified_date = ? , keyword_type = ? , last_update_time = ? , login_user = ? , is_use_python = ? , company_name = ? , organization_id = ? , template_id = ? , content_position = ? , status = ? 
+2020-03-30 11:06:16.791 [messageContainer-3][DEBUG] c.x.s.mappers.SyncPkgMapper.syncData org.apache.ibatis.logging.jdbc.BaseJdbcLogger[159]: ==> Parameters: (String), (String), (String), (String), 料11号(String), 0(Integer), goods_info(String), 0(Integer), 0(Integer), (String), (String), (String), 0(String), way_bill(String), 0(Integer), (String), 0(Integer), d4d8238e-27d7-429d-b47d-91ff00f8f09f(String), (String), (String), 1(Integer), 运单文件(String), mark_part(String), 00000000-0000-0000-0000-000000000001(String), (String), 0(String), 2020-03-30 11:03:37(String), 1(Integer), 2020-03-30 11:03:36(String), 管理员(String), 1(String), bgd001(String), 00000000-0000-0000-0000-000000000001(String), (String), 下(String), 1(Integer), (String), (String), (String), (String), 料11号(String), 0(Integer), goods_info(String), 0(Integer), 0(Integer), (String), (String), (String), 0(String), way_bill(String), 0(Integer), (String), 0(Integer), (String), (String), 1(Integer), 运单文件(String), mark_part(String), 00000000-0000-0000-0000-000000000001(String), (String), 0(String), 2020-03-30 11:03:37(String), 1(Integer), 2020-03-30 11:03:36(String), 管理员(String), 1(String), bgd001(String), 00000000-0000-0000-0000-000000000001(String), (String), 下(String), 1(Integer)
+2020-03-30 11:06:16.866 [messageContainer-3][DEBUG] c.x.s.mappers.SyncPkgMapper.syncData org.apache.ibatis.logging.jdbc.BaseJdbcLogger[159]: <==    Updates: 2
+2020-03-30 11:06:16.866 [messageContainer-3][DEBUG] org.mybatis.spring.SqlSessionUtils   org.mybatis.spring.SqlSessionUtils[191]: Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1fcbdcb]
+2020-03-30 11:06:16.866 [messageContainer-3][DEBUG] com.x3platform.InternalLogger        com.x3platform.sync.services.impl.SyncPkgServiceImpl[532]: sync data:{table name:ocr_key_set_config} finished.
+2020-03-30 11:06:24.809 [messageContainer-3][INFO ] com.x3platform.InternalLogger        com.amiintellect.customs.sync.worker.config.RabbitConfig$1[105]: Consume receive msg: {"data":[{"belong_company_name":"","start_position":"","regular_expression":"","dimset":"","key_word":"料111号","y_max":0,"type":"goods_info","x_min":0,"content_max":0,"number":"","content_rule":"","get_type":"","pz_type":"0","file_type":"way_bill","y_min":0,"col_multiple":"","x_max":0,"id":"d4d8238e-27d7-429d-b47d-91ff00f8f09f","aligned":"","get_type_str":"","key_position":1,"file_name":"运单文件","map_name":"mark_part","customs_broker_id":"00000000-0000-0000-0000-000000000001","col_digit":"","is_one_use":"0","modified_date":"2020-03-30 11:06:17","keyword_type":1,"last_update_time":"2020-03-30 11:06:17","login_user":"管理员","is_use_python":"1","company_name":"bgd001","organization_id":"00000000-0000-0000-0000-000000000001","template_id":"","content_position":"下","status":1}],"data_source_name":"ami-customs","table_name":"ocr_key_set_config"}
+2020-03-30 11:06:24.811 [messageContainer-3][DEBUG] com.x3platform.InternalLogger        com.x3platform.sync.services.impl.SyncPkgServiceImpl[514]: sync data:{table name:ocr_key_set_config, row count:1}.
+2020-03-30 11:06:24.812 [messageContainer-3][DEBUG] org.mybatis.spring.SqlSessionUtils   org.mybatis.spring.SqlSessionUtils[97]: Creating a new SqlSession
+2020-03-30 11:06:24.812 [messageContainer-3][DEBUG] org.mybatis.spring.SqlSessionUtils   org.mybatis.spring.SqlSessionUtils[148]: SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10011b] was not registered for synchronization because synchronization is not active
+2020-03-30 11:06:24.815 [messageContainer-3][DEBUG] o.m.s.t.SpringManagedTransaction     org.mybatis.spring.transaction.SpringManagedTransaction[87]: JDBC Connection [com.mysql.jdbc.JDBC4Connection@1a9d84b] will not be managed by Spring
+2020-03-30 11:06:24.816 [messageContainer-3][DEBUG] c.x.s.mappers.SyncPkgMapper.syncData org.apache.ibatis.logging.jdbc.BaseJdbcLogger[159]: ==>  Preparing: INSERT INTO ocr_key_set_config ( belong_company_name , start_position , regular_expression , dimset , key_word , y_max , type , x_min , content_max , number , content_rule , get_type , pz_type , file_type , y_min , col_multiple , x_max , id , aligned , get_type_str , key_position , file_name , map_name , customs_broker_id , col_digit , is_one_use , modified_date , keyword_type , last_update_time , login_user , is_use_python , company_name , organization_id , template_id , content_position , status ) VALUES ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) ON DUPLICATE KEY UPDATE belong_company_name = ? , start_position = ? , regular_expression = ? , dimset = ? , key_word = ? , y_max = ? , type = ? , x_min = ? , content_max = ? , number = ? , content_rule = ? , get_type = ? , pz_type = ? , file_type = ? , y_min = ? , col_multiple = ? , x_max = ? , aligned = ? , get_type_str = ? , key_position = ? , file_name = ? , map_name = ? , customs_broker_id = ? , col_digit = ? , is_one_use = ? , modified_date = ? , keyword_type = ? , last_update_time = ? , login_user = ? , is_use_python = ? , company_name = ? , organization_id = ? , template_id = ? , content_position = ? , status = ? 
+2020-03-30 11:06:24.819 [messageContainer-3][DEBUG] c.x.s.mappers.SyncPkgMapper.syncData org.apache.ibatis.logging.jdbc.BaseJdbcLogger[159]: ==> Parameters: (String), (String), (String), (String), 料111号(String), 0(Integer), goods_info(String), 0(Integer), 0(Integer), (String), (String), (String), 0(String), way_bill(String), 0(Integer), (String), 0(Integer), d4d8238e-27d7-429d-b47d-91ff00f8f09f(String), (String), (String), 1(Integer), 运单文件(String), mark_part(String), 00000000-0000-0000-0000-000000000001(String), (String), 0(String), 2020-03-30 11:06:17(String), 1(Integer), 2020-03-30 11:06:17(String), 管理员(String), 1(String), bgd001(String), 00000000-0000-0000-0000-000000000001(String), (String), 下(String), 1(Integer), (String), (String), (String), (String), 料111号(String), 0(Integer), goods_info(String), 0(Integer), 0(Integer), (String), (String), (String), 0(String), way_bill(String), 0(Integer), (String), 0(Integer), (String), (String), 1(Integer), 运单文件(String), mark_part(String), 00000000-0000-0000-0000-000000000001(String), (String), 0(String), 2020-03-30 11:06:17(String), 1(Integer), 2020-03-30 11:06:17(String), 管理员(String), 1(String), bgd001(String), 00000000-0000-0000-0000-000000000001(String), (String), 下(String), 1(Integer)
+2020-03-30 11:06:24.899 [messageContainer-3][DEBUG] c.x.s.mappers.SyncPkgMapper.syncData org.apache.ibatis.logging.jdbc.BaseJdbcLogger[159]: <==    Updates: 2
+2020-03-30 11:06:24.899 [messageContainer-3][DEBUG] org.mybatis.spring.SqlSessionUtils   org.mybatis.spring.SqlSessionUtils[191]: Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10011b]
+2020-03-30 11:06:24.900 [messageContainer-3][DEBUG] com.x3platform.InternalLogger        com.x3platform.sync.services.impl.SyncPkgServiceImpl[532]: sync data:{table name:ocr_key_set_config} finished.
+2020-03-30 13:32:26.563 [AMQP Connection 49.4.65.211:5672][WARN ] c.r.c.impl.ForgivingExceptionHandler com.rabbitmq.client.impl.ForgivingExceptionHandler[115]: An unexpected connection driver error occured (Exception message: Connection reset)
+2020-03-30 13:32:26.594 [AMQP Connection 49.4.65.211:5672][ERROR] o.s.a.r.c.CachingConnectionFactory   org.springframework.amqp.rabbit.connection.CachingConnectionFactory$DefaultChannelCloseLogger[1292]: Channel shutdown: connection error
+2020-03-30 13:32:26.619 [scheduler_QuartzSchedulerThread][ERROR] c.alibaba.druid.pool.DruidDataSource com.alibaba.druid.pool.DruidDataSource[1602]: discard connection
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,356,436 milliseconds ago.  The last packet sent successfully to the server was 2,333,326 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3562)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3462)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3903)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2482)
+	at com.mysql.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:4796)
+	at com.alibaba.druid.pool.DruidPooledConnection.setAutoCommit(DruidPooledConnection.java:712)
+	at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.setAutoCommit(AttributeRestoringConnectionInvocationHandler.java:98)
+	at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.invoke(AttributeRestoringConnectionInvocationHandler.java:66)
+	at com.sun.proxy.$Proxy145.setAutoCommit(Unknown Source)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:804)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.getNonManagedTXConnection(JobStoreTX.java:71)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3846)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTriggers(JobStoreSupport.java:2802)
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:287)
+Caused by: java.net.SocketException: Network is unreachable: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.mysql.jdbc.util.ReadAheadInputStream.fill(ReadAheadInputStream.java:101)
+	at com.mysql.jdbc.util.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:144)
+	at com.mysql.jdbc.util.ReadAheadInputStream.read(ReadAheadInputStream.java:174)
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:3011)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3472)
+	... 15 common frames omitted
+2020-03-30 13:32:26.619 [scheduler_QuartzSchedulerThread][WARN ] o.q.impl.jdbcjobstore.JobStoreTX     org.quartz.impl.jdbcjobstore.JobStoreSupport[811]: Failed to override connection auto commit/transaction isolation.
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,356,436 milliseconds ago.  The last packet sent successfully to the server was 2,333,326 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3562)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3462)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3903)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2482)
+	at com.mysql.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:4796)
+	at com.alibaba.druid.pool.DruidPooledConnection.setAutoCommit(DruidPooledConnection.java:712)
+	at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.setAutoCommit(AttributeRestoringConnectionInvocationHandler.java:98)
+	at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.invoke(AttributeRestoringConnectionInvocationHandler.java:66)
+	at com.sun.proxy.$Proxy145.setAutoCommit(Unknown Source)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:804)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.getNonManagedTXConnection(JobStoreTX.java:71)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3846)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTriggers(JobStoreSupport.java:2802)
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:287)
+Caused by: java.net.SocketException: Network is unreachable: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.mysql.jdbc.util.ReadAheadInputStream.fill(ReadAheadInputStream.java:101)
+	at com.mysql.jdbc.util.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:144)
+	at com.mysql.jdbc.util.ReadAheadInputStream.read(ReadAheadInputStream.java:174)
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:3011)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3472)
+	... 15 common frames omitted
+2020-03-30 13:32:26.619 [Druid-ConnectionPool-Create-30518094][ERROR] c.alibaba.druid.pool.DruidDataSource com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread[2471]: create connection SQLException, url: jdbc:mysql://mysql.amiintellect.com:3306/ami_customs_edge_dev?serverTimezone=GMT&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+Caused by: java.net.UnknownHostException: mysql.amiintellect.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 15 common frames omitted
+2020-03-30 13:32:26.619 [scheduler_QuartzSchedulerThread][WARN ] o.q.i.j.AttributeRestoringConnectionInvocationHandler org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler[144]: Failed restore connection's original auto commit setting.
+java.sql.SQLException: connection holder is null
+	at com.alibaba.druid.pool.DruidPooledConnection.checkStateInternal(DruidPooledConnection.java:1155)
+	at com.alibaba.druid.pool.DruidPooledConnection.checkState(DruidPooledConnection.java:1148)
+	at com.alibaba.druid.pool.DruidPooledConnection.setAutoCommit(DruidPooledConnection.java:701)
+	at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.restoreOriginalAtributes(AttributeRestoringConnectionInvocationHandler.java:141)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.cleanupConnection(JobStoreSupport.java:3662)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3881)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTriggers(JobStoreSupport.java:2802)
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:287)
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,356,436 milliseconds ago.  The last packet sent successfully to the server was 2,333,326 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3562)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3462)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3903)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2482)
+	at com.mysql.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:4796)
+	at com.alibaba.druid.pool.DruidPooledConnection.setAutoCommit(DruidPooledConnection.java:712)
+	at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.setAutoCommit(AttributeRestoringConnectionInvocationHandler.java:98)
+	at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.invoke(AttributeRestoringConnectionInvocationHandler.java:66)
+	at com.sun.proxy.$Proxy145.setAutoCommit(Unknown Source)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:804)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.getNonManagedTXConnection(JobStoreTX.java:71)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3846)
+	... 2 common frames omitted
+Caused by: java.net.SocketException: Network is unreachable: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.mysql.jdbc.util.ReadAheadInputStream.fill(ReadAheadInputStream.java:101)
+	at com.mysql.jdbc.util.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:144)
+	at com.mysql.jdbc.util.ReadAheadInputStream.read(ReadAheadInputStream.java:174)
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:3011)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3472)
+	... 15 common frames omitted
+2020-03-30 13:32:26.629 [scheduler_QuartzSchedulerThread][ERROR] org.quartz.core.ErrorLogger          org.quartz.core.ErrorLogger[2401]: An error occurred while scanning for the next triggers to fire.
+org.quartz.JobPersistenceException: Couldn't acquire next trigger: connection holder is null
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTrigger(JobStoreSupport.java:2910)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$41.execute(JobStoreSupport.java:2805)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$41.execute(JobStoreSupport.java:2803)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3849)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTriggers(JobStoreSupport.java:2802)
+	at org.quartz.core.QuartzSchedulerThread.run(QuartzSchedulerThread.java:287)
+Caused by: java.sql.SQLException: connection holder is null
+	at com.alibaba.druid.pool.DruidPooledConnection.checkStateInternal(DruidPooledConnection.java:1155)
+	at com.alibaba.druid.pool.DruidPooledConnection.checkState(DruidPooledConnection.java:1148)
+	at com.alibaba.druid.pool.DruidPooledConnection.prepareStatement(DruidPooledConnection.java:336)
+	at sun.reflect.GeneratedMethodAccessor65.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.invoke(AttributeRestoringConnectionInvocationHandler.java:73)
+	at com.sun.proxy.$Proxy145.prepareStatement(Unknown Source)
+	at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.selectTriggerToAcquire(StdJDBCDelegate.java:2599)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.acquireNextTrigger(JobStoreSupport.java:2844)
+	... 5 common frames omitted
+Caused by: com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 2,356,436 milliseconds ago.  The last packet sent successfully to the server was 2,333,326 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3562)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3462)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3903)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:2530)
+	at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2683)
+	at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2482)
+	at com.mysql.jdbc.ConnectionImpl.setAutoCommit(ConnectionImpl.java:4796)
+	at com.alibaba.druid.pool.DruidPooledConnection.setAutoCommit(DruidPooledConnection.java:712)
+	at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.setAutoCommit(AttributeRestoringConnectionInvocationHandler.java:98)
+	at org.quartz.impl.jdbcjobstore.AttributeRestoringConnectionInvocationHandler.invoke(AttributeRestoringConnectionInvocationHandler.java:66)
+	at com.sun.proxy.$Proxy145.setAutoCommit(Unknown Source)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.getConnection(JobStoreSupport.java:804)
+	at org.quartz.impl.jdbcjobstore.JobStoreTX.getNonManagedTXConnection(JobStoreTX.java:71)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3846)
+	... 2 common frames omitted
+Caused by: java.net.SocketException: Network is unreachable: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at com.mysql.jdbc.util.ReadAheadInputStream.fill(ReadAheadInputStream.java:101)
+	at com.mysql.jdbc.util.ReadAheadInputStream.readFromUnderlyingStreamIfNecessary(ReadAheadInputStream.java:144)
+	at com.mysql.jdbc.util.ReadAheadInputStream.read(ReadAheadInputStream.java:174)
+	at com.mysql.jdbc.MysqlIO.readFully(MysqlIO.java:3011)
+	at com.mysql.jdbc.MysqlIO.reuseAndReadPacket(MysqlIO.java:3472)
+	... 15 common frames omitted
+2020-03-30 13:32:26.629 [Druid-ConnectionPool-Create-30518094][ERROR] c.alibaba.druid.pool.DruidDataSource com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread[2471]: create connection SQLException, url: jdbc:mysql://mysql.amiintellect.com:3306/ami_customs_edge_dev?serverTimezone=GMT&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+Caused by: java.net.UnknownHostException: mysql.amiintellect.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 15 common frames omitted
+2020-03-30 13:32:27.131 [Druid-ConnectionPool-Create-30518094][ERROR] c.alibaba.druid.pool.DruidDataSource com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread[2471]: create connection SQLException, url: jdbc:mysql://mysql.amiintellect.com:3306/ami_customs_edge_dev?serverTimezone=GMT&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+Caused by: java.net.UnknownHostException: mysql.amiintellect.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 15 common frames omitted
+2020-03-30 13:32:27.639 [Druid-ConnectionPool-Create-30518094][ERROR] c.alibaba.druid.pool.DruidDataSource com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread[2471]: create connection SQLException, url: jdbc:mysql://mysql.amiintellect.com:3306/ami_customs_edge_dev?serverTimezone=GMT&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+Caused by: java.net.UnknownHostException: mysql.amiintellect.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 15 common frames omitted
+2020-03-30 13:32:28.161 [Druid-ConnectionPool-Create-30518094][ERROR] c.alibaba.druid.pool.DruidDataSource com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread[2471]: create connection SQLException, url: jdbc:mysql://mysql.amiintellect.com:3306/ami_customs_edge_dev?serverTimezone=GMT&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+Caused by: java.net.UnknownHostException: mysql.amiintellect.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 15 common frames omitted
+2020-03-30 13:32:28.677 [Druid-ConnectionPool-Create-30518094][ERROR] c.alibaba.druid.pool.DruidDataSource com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread[2471]: create connection SQLException, url: jdbc:mysql://mysql.amiintellect.com:3306/ami_customs_edge_dev?serverTimezone=GMT&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+Caused by: java.net.UnknownHostException: mysql.amiintellect.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 15 common frames omitted
+2020-03-30 13:32:29.192 [Druid-ConnectionPool-Create-30518094][ERROR] c.alibaba.druid.pool.DruidDataSource com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread[2471]: create connection SQLException, url: jdbc:mysql://mysql.amiintellect.com:3306/ami_customs_edge_dev?serverTimezone=GMT&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+Caused by: java.net.UnknownHostException: mysql.amiintellect.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 15 common frames omitted
+2020-03-30 13:32:29.704 [Druid-ConnectionPool-Create-30518094][ERROR] c.alibaba.druid.pool.DruidDataSource com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread[2471]: create connection SQLException, url: jdbc:mysql://mysql.amiintellect.com:3306/ami_customs_edge_dev?serverTimezone=GMT&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+Caused by: java.net.UnknownHostException: mysql.amiintellect.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 15 common frames omitted
+2020-03-30 13:32:30.210 [Druid-ConnectionPool-Create-30518094][ERROR] c.alibaba.druid.pool.DruidDataSource com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread[2471]: create connection SQLException, url: jdbc:mysql://mysql.amiintellect.com:3306/ami_customs_edge_dev?serverTimezone=GMT&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+Caused by: java.net.UnknownHostException: mysql.amiintellect.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 15 common frames omitted
+2020-03-30 13:32:30.712 [Druid-ConnectionPool-Create-30518094][ERROR] c.alibaba.druid.pool.DruidDataSource com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread[2471]: create connection SQLException, url: jdbc:mysql://mysql.amiintellect.com:3306/ami_customs_edge_dev?serverTimezone=GMT&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+Caused by: java.net.UnknownHostException: mysql.amiintellect.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 15 common frames omitted
+2020-03-30 13:32:31.227 [Druid-ConnectionPool-Create-30518094][ERROR] c.alibaba.druid.pool.DruidDataSource com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread[2471]: create connection SQLException, url: jdbc:mysql://mysql.amiintellect.com:3306/ami_customs_edge_dev?serverTimezone=GMT&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+Caused by: java.net.UnknownHostException: mysql.amiintellect.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 15 common frames omitted
+2020-03-30 13:32:31.737 [Druid-ConnectionPool-Create-30518094][ERROR] c.alibaba.druid.pool.DruidDataSource com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread[2471]: create connection SQLException, url: jdbc:mysql://mysql.amiintellect.com:3306/ami_customs_edge_dev?serverTimezone=GMT&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+Caused by: java.net.UnknownHostException: mysql.amiintellect.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 15 common frames omitted
+2020-03-30 13:32:32.239 [Druid-ConnectionPool-Create-30518094][ERROR] c.alibaba.druid.pool.DruidDataSource com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread[2471]: create connection SQLException, url: jdbc:mysql://mysql.amiintellect.com:3306/ami_customs_edge_dev?serverTimezone=GMT&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor63.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+Caused by: java.net.UnknownHostException: mysql.amiintellect.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 14 common frames omitted
+2020-03-30 13:32:32.742 [Druid-ConnectionPool-Create-30518094][ERROR] c.alibaba.druid.pool.DruidDataSource com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread[2471]: create connection SQLException, url: jdbc:mysql://mysql.amiintellect.com:3306/ami_customs_edge_dev?serverTimezone=GMT&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor63.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+Caused by: java.net.UnknownHostException: mysql.amiintellect.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 14 common frames omitted
+2020-03-30 13:32:33.254 [Druid-ConnectionPool-Create-30518094][ERROR] c.alibaba.druid.pool.DruidDataSource com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread[2471]: create connection SQLException, url: jdbc:mysql://mysql.amiintellect.com:3306/ami_customs_edge_dev?serverTimezone=GMT&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor65.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor63.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+Caused by: java.net.UnknownHostException: mysql.amiintellect.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 14 common frames omitted
+2020-03-30 13:32:33.762 [Druid-ConnectionPool-Create-30518094][ERROR] c.alibaba.druid.pool.DruidDataSource com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread[2471]: create connection SQLException, url: jdbc:mysql://mysql.amiintellect.com:3306/ami_customs_edge_dev?serverTimezone=GMT&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor65.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor63.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+Caused by: java.net.UnknownHostException: mysql.amiintellect.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 14 common frames omitted
+2020-03-30 13:32:34.270 [Druid-ConnectionPool-Create-30518094][ERROR] c.alibaba.druid.pool.DruidDataSource com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread[2471]: create connection SQLException, url: jdbc:mysql://mysql.amiintellect.com:3306/ami_customs_edge_dev?serverTimezone=GMT&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor65.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor63.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+Caused by: java.net.UnknownHostException: mysql.amiintellect.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 14 common frames omitted
+2020-03-30 13:32:34.783 [Druid-ConnectionPool-Create-30518094][ERROR] c.alibaba.druid.pool.DruidDataSource com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread[2471]: create connection SQLException, url: jdbc:mysql://mysql.amiintellect.com:3306/ami_customs_edge_dev?serverTimezone=GMT&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor65.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor63.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+Caused by: java.net.UnknownHostException: mysql.amiintellect.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 14 common frames omitted
+2020-03-30 13:32:35.298 [Druid-ConnectionPool-Create-30518094][ERROR] c.alibaba.druid.pool.DruidDataSource com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread[2471]: create connection SQLException, url: jdbc:mysql://mysql.amiintellect.com:3306/ami_customs_edge_dev?serverTimezone=GMT&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor65.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor63.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+Caused by: java.net.UnknownHostException: mysql.amiintellect.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 14 common frames omitted
+2020-03-30 13:32:35.799 [Druid-ConnectionPool-Create-30518094][ERROR] c.alibaba.druid.pool.DruidDataSource com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread[2471]: create connection SQLException, url: jdbc:mysql://mysql.amiintellect.com:3306/ami_customs_edge_dev?serverTimezone=GMT&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor65.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor63.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+Caused by: java.net.UnknownHostException: mysql.amiintellect.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 14 common frames omitted
+2020-03-30 13:32:36.310 [Druid-ConnectionPool-Create-30518094][ERROR] c.alibaba.druid.pool.DruidDataSource com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread[2471]: create connection SQLException, url: jdbc:mysql://mysql.amiintellect.com:3306/ami_customs_edge_dev?serverTimezone=GMT&characterEncoding=utf-8&useSSL=false, errorCode 0, state 08S01
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.GeneratedConstructorAccessor65.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:990)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:342)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2188)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2221)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2016)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:776)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.GeneratedConstructorAccessor63.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:386)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2468)
+Caused by: java.net.UnknownHostException: mysql.amiintellect.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:188)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:301)
+	... 14 common frames omitted
+2020-03-30 13:39:59.559 [AMQP Connection 49.4.65.211:5672][WARN ] c.r.c.impl.ForgivingExceptionHandler com.rabbitmq.client.impl.ForgivingExceptionHandler[115]: An unexpected connection driver error occured (Exception message: Connection reset)
+2020-03-30 13:39:59.986 [AMQP Connection 49.4.65.211:5672][ERROR] o.s.a.r.c.CachingConnectionFactory   org.springframework.amqp.rabbit.connection.CachingConnectionFactory$DefaultChannelCloseLogger[1292]: Channel shutdown: connection error
+2020-03-30 15:29:09.410 [main][INFO ] c.a.customs.sync.worker.App          org.springframework.boot.StartupInfoLogger[50]: Starting App v1.0 on LAPTOP-FM749B11 with PID 6316 (started by Lenovo in D:\amibook\接收程序)
+2020-03-30 15:29:09.410 [main][DEBUG] c.a.customs.sync.worker.App          org.springframework.boot.StartupInfoLogger[53]: Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2020-03-30 15:29:09.410 [main][INFO ] c.a.customs.sync.worker.App          org.springframework.boot.SpringApplication[663]: The following profiles are active: prod
+2020-03-30 15:29:10.514 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-abstractions-0.1.0-SNAPSHOT.jar!/com/x3platform/digitalnumber/mappers/DigitalNumberMapper.class]
+2020-03-30 15:29:10.515 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-apps-0.1.0-SNAPSHOT.jar!/com/x3platform/apps/mappers/ApplicationSettingGroupMapper.class]
+2020-03-30 15:29:10.516 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-apps-0.1.0-SNAPSHOT.jar!/com/x3platform/apps/mappers/ApplicationMethodMapper.class]
+2020-03-30 15:29:10.516 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-apps-0.1.0-SNAPSHOT.jar!/com/x3platform/apps/mappers/ApplicationSettingMapper.class]
+2020-03-30 15:29:10.518 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-apps-0.1.0-SNAPSHOT.jar!/com/x3platform/apps/mappers/ApplicationEventMapper.class]
+2020-03-30 15:29:10.520 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-apps-0.1.0-SNAPSHOT.jar!/com/x3platform/apps/mappers/ApplicationFeatureMapper.class]
+2020-03-30 15:29:10.520 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-apps-0.1.0-SNAPSHOT.jar!/com/x3platform/apps/mappers/ApplicationOptionMapper.class]
+2020-03-30 15:29:10.520 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-apps-0.1.0-SNAPSHOT.jar!/com/x3platform/apps/mappers/ApplicationMapper.class]
+2020-03-30 15:29:10.523 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-apps-0.1.0-SNAPSHOT.jar!/com/x3platform/apps/mappers/ApplicationMenuMapper.class]
+2020-03-30 15:29:10.523 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-connect-0.1.0-SNAPSHOT.jar!/com/x3platform/connect/mappers/ConnectCallMapper.class]
+2020-03-30 15:29:10.527 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-connect-0.1.0-SNAPSHOT.jar!/com/x3platform/connect/mappers/ConnectAuthorizationCodeMapper.class]
+2020-03-30 15:29:10.527 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-connect-0.1.0-SNAPSHOT.jar!/com/x3platform/connect/mappers/ConnectMapper.class]
+2020-03-30 15:29:10.530 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-connect-0.1.0-SNAPSHOT.jar!/com/x3platform/connect/mappers/ConnectAccessTokenMapper.class]
+2020-03-30 15:29:10.530 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-membership-0.1.0-SNAPSHOT.jar!/com/x3platform/membership/mappers/StandardRoleMapper.class]
+2020-03-30 15:29:10.531 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-membership-0.1.0-SNAPSHOT.jar!/com/x3platform/membership/mappers/AccountBindingMapper.class]
+2020-03-30 15:29:10.532 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-membership-0.1.0-SNAPSHOT.jar!/com/x3platform/membership/mappers/GroupMapper.class]
+2020-03-30 15:29:10.533 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-membership-0.1.0-SNAPSHOT.jar!/com/x3platform/membership/mappers/StandardOrganizationUnitMapper.class]
+2020-03-30 15:29:10.534 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-membership-0.1.0-SNAPSHOT.jar!/com/x3platform/membership/mappers/AccountLogMapper.class]
+2020-03-30 15:29:10.535 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-membership-0.1.0-SNAPSHOT.jar!/com/x3platform/membership/mappers/OrganizationMapper.class]
+2020-03-30 15:29:10.536 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-membership-0.1.0-SNAPSHOT.jar!/com/x3platform/membership/mappers/AccountMapper.class]
+2020-03-30 15:29:10.541 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-membership-0.1.0-SNAPSHOT.jar!/com/x3platform/membership/mappers/RoleMapper.class]
+2020-03-30 15:29:10.542 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-membership-0.1.0-SNAPSHOT.jar!/com/x3platform/membership/mappers/OrganizationUnitMapper.class]
+2020-03-30 15:29:10.543 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-membership-0.1.0-SNAPSHOT.jar!/com/x3platform/membership/mappers/UserMapper.class]
+2020-03-30 15:29:10.543 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-membership-0.1.0-SNAPSHOT.jar!/com/x3platform/membership/mappers/AuthorizationObjectMapper.class]
+2020-03-30 15:29:10.544 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-sessions-0.1.0-SNAPSHOT.jar!/com/x3platform/sessions/mappers/TicketMapper.class]
+2020-03-30 15:29:10.544 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-sync-0.1.0-SNAPSHOT.jar!/com/x3platform/sync/mappers/SyncQueueMapper.class]
+2020-03-30 15:29:10.545 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-sync-0.1.0-SNAPSHOT.jar!/com/x3platform/sync/mappers/SyncSettingMapper.class]
+2020-03-30 15:29:10.545 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-sync-0.1.0-SNAPSHOT.jar!/com/x3platform/sync/mappers/SyncPkgMapper.class]
+2020-03-30 15:29:10.556 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-abstractions-0.1.0-SNAPSHOT.jar!/com/x3platform/data/storages/mappers/DataStorageNodeMapper.class]
+2020-03-30 15:29:10.558 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-abstractions-0.1.0-SNAPSHOT.jar!/com/x3platform/data/storages/mappers/DataStorageSchemaMapper.class]
+2020-03-30 15:29:10.562 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-abstractions-0.1.0-SNAPSHOT.jar!/com/x3platform/security/authority/mappers/AuthorityMapper.class]
+2020-03-30 15:29:10.564 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/x3platform-abstractions-0.1.0-SNAPSHOT.jar!/com/x3platform/security/verificationcode/mappers/VerificationCodeMapper.class]
+2020-03-30 15:29:10.569 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/amiintellect-customs-b2b-1.0.0-SNAPSHOT.jar!/com/amiintellect/customs/b2b/mappers/B2bImportMapper.class]
+2020-03-30 15:29:10.570 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/amiintellect-customs-b2b-1.0.0-SNAPSHOT.jar!/com/amiintellect/customs/b2b/mappers/B2bMessageHeadMapper.class]
+2020-03-30 15:29:10.571 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/amiintellect-customs-b2b-1.0.0-SNAPSHOT.jar!/com/amiintellect/customs/b2b/mappers/SasInvtHeadTypeMapper.class]
+2020-03-30 15:29:10.572 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider[437]: Identified candidate component class: URL [jar:file:/D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/lib/amiintellect-customs-b2b-1.0.0-SNAPSHOT.jar!/com/amiintellect/customs/b2b/mappers/SasInvtListTypeMapper.class]
+2020-03-30 15:29:10.580 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'digitalNumberMapper' and 'com.x3platform.digitalnumber.mappers.DigitalNumberMapper' mapperInterface
+2020-03-30 15:29:10.580 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'digitalNumberMapper'.
+2020-03-30 15:29:10.582 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'applicationSettingGroupMapper' and 'com.x3platform.apps.mappers.ApplicationSettingGroupMapper' mapperInterface
+2020-03-30 15:29:10.583 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'applicationSettingGroupMapper'.
+2020-03-30 15:29:10.584 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'applicationMethodMapper' and 'com.x3platform.apps.mappers.ApplicationMethodMapper' mapperInterface
+2020-03-30 15:29:10.584 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'applicationMethodMapper'.
+2020-03-30 15:29:10.585 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'applicationSettingMapper' and 'com.x3platform.apps.mappers.ApplicationSettingMapper' mapperInterface
+2020-03-30 15:29:10.585 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'applicationSettingMapper'.
+2020-03-30 15:29:10.589 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'applicationEventMapper' and 'com.x3platform.apps.mappers.ApplicationEventMapper' mapperInterface
+2020-03-30 15:29:10.591 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'applicationEventMapper'.
+2020-03-30 15:29:10.592 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'applicationFeatureMapper' and 'com.x3platform.apps.mappers.ApplicationFeatureMapper' mapperInterface
+2020-03-30 15:29:10.592 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'applicationFeatureMapper'.
+2020-03-30 15:29:10.593 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'applicationOptionMapper' and 'com.x3platform.apps.mappers.ApplicationOptionMapper' mapperInterface
+2020-03-30 15:29:10.594 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'applicationOptionMapper'.
+2020-03-30 15:29:10.594 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'applicationMapper' and 'com.x3platform.apps.mappers.ApplicationMapper' mapperInterface
+2020-03-30 15:29:10.595 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'applicationMapper'.
+2020-03-30 15:29:10.596 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'applicationMenuMapper' and 'com.x3platform.apps.mappers.ApplicationMenuMapper' mapperInterface
+2020-03-30 15:29:10.596 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'applicationMenuMapper'.
+2020-03-30 15:29:10.597 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'connectCallMapper' and 'com.x3platform.connect.mappers.ConnectCallMapper' mapperInterface
+2020-03-30 15:29:10.597 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'connectCallMapper'.
+2020-03-30 15:29:10.598 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'connectAuthorizationCodeMapper' and 'com.x3platform.connect.mappers.ConnectAuthorizationCodeMapper' mapperInterface
+2020-03-30 15:29:10.604 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'connectAuthorizationCodeMapper'.
+2020-03-30 15:29:10.604 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'connectMapper' and 'com.x3platform.connect.mappers.ConnectMapper' mapperInterface
+2020-03-30 15:29:10.604 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'connectMapper'.
+2020-03-30 15:29:10.604 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'connectAccessTokenMapper' and 'com.x3platform.connect.mappers.ConnectAccessTokenMapper' mapperInterface
+2020-03-30 15:29:10.604 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'connectAccessTokenMapper'.
+2020-03-30 15:29:10.604 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'standardRoleMapper' and 'com.x3platform.membership.mappers.StandardRoleMapper' mapperInterface
+2020-03-30 15:29:10.604 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'standardRoleMapper'.
+2020-03-30 15:29:10.604 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'accountBindingMapper' and 'com.x3platform.membership.mappers.AccountBindingMapper' mapperInterface
+2020-03-30 15:29:10.604 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'accountBindingMapper'.
+2020-03-30 15:29:10.604 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'groupMapper' and 'com.x3platform.membership.mappers.GroupMapper' mapperInterface
+2020-03-30 15:29:10.604 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'groupMapper'.
+2020-03-30 15:29:10.604 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'standardOrganizationUnitMapper' and 'com.x3platform.membership.mappers.StandardOrganizationUnitMapper' mapperInterface
+2020-03-30 15:29:10.604 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'standardOrganizationUnitMapper'.
+2020-03-30 15:29:10.604 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'accountLogMapper' and 'com.x3platform.membership.mappers.AccountLogMapper' mapperInterface
+2020-03-30 15:29:10.604 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'accountLogMapper'.
+2020-03-30 15:29:10.604 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'organizationMapper' and 'com.x3platform.membership.mappers.OrganizationMapper' mapperInterface
+2020-03-30 15:29:10.604 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'organizationMapper'.
+2020-03-30 15:29:10.604 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'accountMapper' and 'com.x3platform.membership.mappers.AccountMapper' mapperInterface
+2020-03-30 15:29:10.604 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'accountMapper'.
+2020-03-30 15:29:10.604 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'roleMapper' and 'com.x3platform.membership.mappers.RoleMapper' mapperInterface
+2020-03-30 15:29:10.604 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'roleMapper'.
+2020-03-30 15:29:10.604 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'organizationUnitMapper' and 'com.x3platform.membership.mappers.OrganizationUnitMapper' mapperInterface
+2020-03-30 15:29:10.604 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'organizationUnitMapper'.
+2020-03-30 15:29:10.604 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'userMapper' and 'com.x3platform.membership.mappers.UserMapper' mapperInterface
+2020-03-30 15:29:10.620 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
+2020-03-30 15:29:10.620 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'authorizationObjectMapper' and 'com.x3platform.membership.mappers.AuthorizationObjectMapper' mapperInterface
+2020-03-30 15:29:10.620 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'authorizationObjectMapper'.
+2020-03-30 15:29:10.620 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'ticketMapper' and 'com.x3platform.sessions.mappers.TicketMapper' mapperInterface
+2020-03-30 15:29:10.620 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'ticketMapper'.
+2020-03-30 15:29:10.620 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'syncQueueMapper' and 'com.x3platform.sync.mappers.SyncQueueMapper' mapperInterface
+2020-03-30 15:29:10.620 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'syncQueueMapper'.
+2020-03-30 15:29:10.620 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'syncSettingMapper' and 'com.x3platform.sync.mappers.SyncSettingMapper' mapperInterface
+2020-03-30 15:29:10.620 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'syncSettingMapper'.
+2020-03-30 15:29:10.620 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'syncPkgMapper' and 'com.x3platform.sync.mappers.SyncPkgMapper' mapperInterface
+2020-03-30 15:29:10.620 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'syncPkgMapper'.
+2020-03-30 15:29:10.620 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'dataStorageNodeMapper' and 'com.x3platform.data.storages.mappers.DataStorageNodeMapper' mapperInterface
+2020-03-30 15:29:10.620 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'dataStorageNodeMapper'.
+2020-03-30 15:29:10.620 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'dataStorageSchemaMapper' and 'com.x3platform.data.storages.mappers.DataStorageSchemaMapper' mapperInterface
+2020-03-30 15:29:10.635 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'dataStorageSchemaMapper'.
+2020-03-30 15:29:10.635 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'authorityMapper' and 'com.x3platform.security.authority.mappers.AuthorityMapper' mapperInterface
+2020-03-30 15:29:10.635 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'authorityMapper'.
+2020-03-30 15:29:10.635 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'verificationCodeMapper' and 'com.x3platform.security.verificationcode.mappers.VerificationCodeMapper' mapperInterface
+2020-03-30 15:29:10.635 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'verificationCodeMapper'.
+2020-03-30 15:29:10.635 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'b2bImportMapper' and 'com.amiintellect.customs.b2b.mappers.B2bImportMapper' mapperInterface
+2020-03-30 15:29:10.635 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'b2bImportMapper'.
+2020-03-30 15:29:10.635 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'b2bMessageHeadMapper' and 'com.amiintellect.customs.b2b.mappers.B2bMessageHeadMapper' mapperInterface
+2020-03-30 15:29:10.635 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'b2bMessageHeadMapper'.
+2020-03-30 15:29:10.635 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'sasInvtHeadTypeMapper' and 'com.amiintellect.customs.b2b.mappers.SasInvtHeadTypeMapper' mapperInterface
+2020-03-30 15:29:10.635 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'sasInvtHeadTypeMapper'.
+2020-03-30 15:29:10.635 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[180]: Creating MapperFactoryBean with name 'sasInvtListTypeMapper' and 'com.amiintellect.customs.b2b.mappers.SasInvtListTypeMapper' mapperInterface
+2020-03-30 15:29:10.635 [main][DEBUG] o.m.s.mapper.ClassPathMapperScanner  org.mybatis.spring.mapper.ClassPathMapperScanner[216]: Enabling autowire by type for MapperFactoryBean with name 'sasInvtListTypeMapper'.
+2020-03-30 15:29:10.652 [main][INFO ] com.x3platform.InternalLogger        com.x3platform.data.DynamicDataSourceRegister[97]: Dynamic DataSource Registry
+2020-03-30 15:29:12.984 [main][DEBUG] o.m.spring.SqlSessionFactoryBean     org.mybatis.spring.SqlSessionFactoryBean[534]: Property 'mapperLocations' was not specified or no matching resources found
+2020-03-30 15:29:13.220 [main][INFO ] com.x3platform.InternalLogger        com.x3platform.SpringContext[18]: Spring ApplicationContext registered
+2020-03-30 15:29:13.259 [main][INFO ] com.x3platform.InternalLogger        com.amiintellect.customs.sync.worker.config.RabbitConfig[68]: RabbitMQ 开始建立连接。
+2020-03-30 15:29:13.282 [main][INFO ] com.x3platform.InternalLogger        com.amiintellect.customs.sync.worker.config.RabbitConfig[77]: RabbitMQ 建立完成。
+2020-03-30 15:29:15.024 [main][INFO ] com.x3platform.InternalLogger        com.x3platform.KernelContext[101]: AuthenticationManagementType:com.x3platform.security.authentication.LocalAuthenticationManagement
+2020-03-30 15:29:17.729 [main][ERROR] com.x3platform.InternalLogger        com.amiintellect.customs.sync.worker.listeners.SchedulerApplicationListener[53]: SchedulerException
+org.quartz.SchedulerConfigException: Failure occured during job recovery.
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.schedulerStarted(JobStoreSupport.java:697)
+	at org.quartz.core.QuartzScheduler.start(QuartzScheduler.java:539)
+	at org.quartz.impl.StdScheduler.start(StdScheduler.java:142)
+	at com.amiintellect.customs.sync.worker.listeners.SchedulerApplicationListener.onApplicationEvent(SchedulerApplicationListener.java:31)
+	at com.amiintellect.customs.sync.worker.listeners.SchedulerApplicationListener.onApplicationEvent(SchedulerApplicationListener.java:19)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:400)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:354)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:888)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:161)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at com.amiintellect.customs.sync.worker.App.main(App.java:65)
+Caused by: org.quartz.JobPersistenceException: Couldn't store trigger 'com.amiintellect.customs.fms.jobs.FmsTimingJob' for 'com.amiintellect.customs.fms.jobs.FmsTimingJob' job:Couldn't retrieve job because a required class was not found: com.amiintellect.customs.fms.jobs.FmsTimingJob
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.storeTrigger(JobStoreSupport.java:1228)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.doUpdateOfMisfiredTrigger(JobStoreSupport.java:1042)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.recoverMisfiredJobs(JobStoreSupport.java:991)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.recoverJobs(JobStoreSupport.java:871)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$1.executeVoid(JobStoreSupport.java:843)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$VoidTransactionCallback.execute(JobStoreSupport.java:3765)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport$VoidTransactionCallback.execute(JobStoreSupport.java:3763)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.executeInNonManagedTXLock(JobStoreSupport.java:3849)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.recoverJobs(JobStoreSupport.java:839)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.schedulerStarted(JobStoreSupport.java:695)
+	... 19 common frames omitted
+Caused by: org.quartz.JobPersistenceException: Couldn't retrieve job because a required class was not found: com.amiintellect.customs.fms.jobs.FmsTimingJob
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retrieveJob(JobStoreSupport.java:1393)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.storeTrigger(JobStoreSupport.java:1210)
+	... 28 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.amiintellect.customs.fms.jobs.FmsTimingJob
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:274)
+	at org.springframework.scheduling.quartz.ResourceLoaderClassLoadHelper.loadClass(ResourceLoaderClassLoadHelper.java:81)
+	at org.springframework.scheduling.quartz.ResourceLoaderClassLoadHelper.loadClass(ResourceLoaderClassLoadHelper.java:86)
+	at org.quartz.impl.jdbcjobstore.StdJDBCDelegate.selectJobDetail(StdJDBCDelegate.java:852)
+	at org.quartz.impl.jdbcjobstore.JobStoreSupport.retrieveJob(JobStoreSupport.java:1390)
+	... 29 common frames omitted
+2020-03-30 15:29:17.729 [main][INFO ] com.x3platform.InternalLogger        com.amiintellect.customs.b2b.plugins.HuaDongImportListenPluginImpl[133]: RabbitMQ 获取到连接参数:{isCloud=false, rabbitAddress=rabbit.amiintellect.com, rabbitPort=5672, rabbitPassword=rabbit#6f4b83a6, rabbitUsername=rabbitadmin, rabbitVirtualHost=/, syncReveiceQueneName=10000003_5006640002_in_test}
+2020-03-30 15:29:17.729 [main][INFO ] com.x3platform.InternalLogger        com.amiintellect.customs.b2b.plugins.HuaDongImportListenPluginImpl[135]: RabbitMQ 开始配置参数.
+2020-03-30 15:29:17.729 [main][INFO ] com.x3platform.InternalLogger        com.amiintellect.customs.b2b.plugins.HuaDongImportListenPluginImpl[142]: RabbitMQ 配置参数完成.
+2020-03-30 15:29:17.880 [main][INFO ] com.x3platform.InternalLogger        com.amiintellect.customs.b2b.plugins.HuaDongImportListenPluginImpl[147]: RabbitMQ 连接建立完成.
+2020-03-30 15:29:17.971 [main][INFO ] com.x3platform.InternalLogger        com.amiintellect.customs.b2b.plugins.HuaDongImportListenPluginImpl[153]: RabbitMQ 等待获取数据.
+2020-03-30 15:29:17.972 [main][INFO ] com.x3platform.InternalLogger        com.amiintellect.customs.b2b.plugins.HuaDongImportListenPluginImpl[242]: RabbitMQ 监听队列中.
+2020-03-30 15:29:18.044 [main][INFO ] c.a.customs.sync.worker.App          org.springframework.boot.StartupInfoLogger[59]: Started App in 9.057 seconds (JVM running for 9.592)
+2020-03-30 15:29:18.049 [main][INFO ] com.x3platform.InternalLogger        com.amiintellect.customs.sync.worker.App[70]: Application com.amiintellect.customs.sync.worker.App 启动成功, 应用端口 0, 耗时 9.443 秒, 加载 Spring 组件 391 个.
+Application Path: /D:/amibook/%e6%8e%a5%e6%94%b6%e7%a8%8b%e5%ba%8f/.
+Application Version: 1.0.0-build.
+2020-03-30 15:29:20.123 [messageContainer-1][INFO ] com.x3platform.InternalLogger        com.amiintellect.customs.sync.worker.config.RabbitConfig$1[105]: Consume receive msg: {"data":[{"belong_company_name":"","start_position":"","regular_expression":"","dimset":"","key_word":"商品名称","y_max":0,"type":"goods_info","x_min":0,"content_max":0,"number":"","content_rule":"","get_type":"","pz_type":"0","file_type":"way_bill","y_min":0,"col_multiple":"","x_max":0,"id":"711ee8ab-cf17-4fa2-a54d-29a9f5dd6d10","aligned":"","get_type_str":"","key_position":1,"file_name":"运单文件","map_name":"p_name","customs_broker_id":"00000000-0000-0000-0000-000000000001","col_digit":"","is_one_use":"0","modified_date":"2020-03-30 15:28:54","keyword_type":1,"last_update_time":"2020-03-30 15:28:53","login_user":"管理员","is_use_python":"1","company_name":"bgd001","organization_id":"00000000-0000-0000-0000-000000000001","template_id":"","content_position":"下","status":1}],"data_source_name":"ami-customs","table_name":"ocr_key_set_config"}
+2020-03-30 15:29:20.311 [messageContainer-1][INFO ] com.x3platform.InternalLogger        com.x3platform.sync.SyncContext[106]: 应用 sync 正在加载。
+2020-03-30 15:29:20.313 [messageContainer-1][INFO ] com.x3platform.InternalLogger        com.x3platform.sync.SyncContext[117]: 应用 sync 已成功加载。
+2020-03-30 15:29:20.378 [messageContainer-1][DEBUG] com.x3platform.InternalLogger        com.x3platform.sync.services.impl.SyncPkgServiceImpl[514]: sync data:{table name:ocr_key_set_config, row count:1}.
+2020-03-30 15:29:20.383 [messageContainer-1][DEBUG] org.mybatis.spring.SqlSessionUtils   org.mybatis.spring.SqlSessionUtils[97]: Creating a new SqlSession
+2020-03-30 15:29:20.388 [messageContainer-1][DEBUG] org.mybatis.spring.SqlSessionUtils   org.mybatis.spring.SqlSessionUtils[148]: SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18bd422] was not registered for synchronization because synchronization is not active
+2020-03-30 15:29:20.787 [messageContainer-1][DEBUG] o.m.s.t.SpringManagedTransaction     org.mybatis.spring.transaction.SpringManagedTransaction[87]: JDBC Connection [com.mysql.jdbc.JDBC4Connection@1b9a771] will not be managed by Spring
+2020-03-30 15:29:20.792 [messageContainer-1][DEBUG] c.x.s.mappers.SyncPkgMapper.syncData org.apache.ibatis.logging.jdbc.BaseJdbcLogger[159]: ==>  Preparing: INSERT INTO ocr_key_set_config ( belong_company_name , start_position , regular_expression , dimset , key_word , y_max , type , x_min , content_max , number , content_rule , get_type , pz_type , file_type , y_min , col_multiple , x_max , id , aligned , get_type_str , key_position , file_name , map_name , customs_broker_id , col_digit , is_one_use , modified_date , keyword_type , last_update_time , login_user , is_use_python , company_name , organization_id , template_id , content_position , status ) VALUES ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) ON DUPLICATE KEY UPDATE belong_company_name = ? , start_position = ? , regular_expression = ? , dimset = ? , key_word = ? , y_max = ? , type = ? , x_min = ? , content_max = ? , number = ? , content_rule = ? , get_type = ? , pz_type = ? , file_type = ? , y_min = ? , col_multiple = ? , x_max = ? , aligned = ? , get_type_str = ? , key_position = ? , file_name = ? , map_name = ? , customs_broker_id = ? , col_digit = ? , is_one_use = ? , modified_date = ? , keyword_type = ? , last_update_time = ? , login_user = ? , is_use_python = ? , company_name = ? , organization_id = ? , template_id = ? , content_position = ? , status = ? 
+2020-03-30 15:29:20.805 [messageContainer-1][DEBUG] c.x.s.mappers.SyncPkgMapper.syncData org.apache.ibatis.logging.jdbc.BaseJdbcLogger[159]: ==> Parameters: (String), (String), (String), (String), 商品名称(String), 0(Integer), goods_info(String), 0(Integer), 0(Integer), (String), (String), (String), 0(String), way_bill(String), 0(Integer), (String), 0(Integer), 711ee8ab-cf17-4fa2-a54d-29a9f5dd6d10(String), (String), (String), 1(Integer), 运单文件(String), p_name(String), 00000000-0000-0000-0000-000000000001(String), (String), 0(String), 2020-03-30 15:28:54(String), 1(Integer), 2020-03-30 15:28:53(String), 管理员(String), 1(String), bgd001(String), 00000000-0000-0000-0000-000000000001(String), (String), 下(String), 1(Integer), (String), (String), (String), (String), 商品名称(String), 0(Integer), goods_info(String), 0(Integer), 0(Integer), (String), (String), (String), 0(String), way_bill(String), 0(Integer), (String), 0(Integer), (String), (String), 1(Integer), 运单文件(String), p_name(String), 00000000-0000-0000-0000-000000000001(String), (String), 0(String), 2020-03-30 15:28:54(String), 1(Integer), 2020-03-30 15:28:53(String), 管理员(String), 1(String), bgd001(String), 00000000-0000-0000-0000-000000000001(String), (String), 下(String), 1(Integer)
+2020-03-30 15:29:20.886 [messageContainer-1][DEBUG] c.x.s.mappers.SyncPkgMapper.syncData org.apache.ibatis.logging.jdbc.BaseJdbcLogger[159]: <==    Updates: 1
+2020-03-30 15:29:20.889 [messageContainer-1][DEBUG] org.mybatis.spring.SqlSessionUtils   org.mybatis.spring.SqlSessionUtils[191]: Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18bd422]
+2020-03-30 15:29:20.891 [messageContainer-1][DEBUG] com.x3platform.InternalLogger        com.x3platform.sync.services.impl.SyncPkgServiceImpl[532]: sync data:{table name:ocr_key_set_config} finished.
+2020-03-30 15:33:21.806 [messageContainer-1][INFO ] com.x3platform.InternalLogger        com.amiintellect.customs.sync.worker.config.RabbitConfig$1[105]: Consume receive msg: {"data":[{"belong_company_name":"","start_position":"","regular_expression":"","dimset":"","key_word":"商品名称","y_max":0,"type":"goods_info","x_min":0,"content_max":0,"number":"","content_rule":"","get_type":"","pz_type":"0","file_type":"way_bill","y_min":0,"col_multiple":"","x_max":0,"id":"711ee8ab-cf17-4fa2-a54d-29a9f5dd6d10","aligned":"","get_type_str":"","key_position":1,"file_name":"运单文件","map_name":"p_name","customs_broker_id":"00000000-0000-0000-0000-000000000001","col_digit":"","is_one_use":"0","modified_date":"2020-03-30 15:33:15","keyword_type":1,"last_update_time":"2020-03-30 15:33:15","login_user":"管理员","is_use_python":"0","company_name":"bgd001","organization_id":"00000000-0000-0000-0000-000000000001","template_id":"","content_position":"下","status":1}],"data_source_name":"ami-customs","table_name":"ocr_key_set_config"}
+2020-03-30 15:33:21.809 [messageContainer-1][DEBUG] com.x3platform.InternalLogger        com.x3platform.sync.services.impl.SyncPkgServiceImpl[514]: sync data:{table name:ocr_key_set_config, row count:1}.
+2020-03-30 15:33:21.812 [messageContainer-1][DEBUG] org.mybatis.spring.SqlSessionUtils   org.mybatis.spring.SqlSessionUtils[97]: Creating a new SqlSession
+2020-03-30 15:33:21.818 [messageContainer-1][DEBUG] org.mybatis.spring.SqlSessionUtils   org.mybatis.spring.SqlSessionUtils[148]: SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1750419] was not registered for synchronization because synchronization is not active
+2020-03-30 15:33:21.863 [messageContainer-1][DEBUG] o.m.s.t.SpringManagedTransaction     org.mybatis.spring.transaction.SpringManagedTransaction[87]: JDBC Connection [com.mysql.jdbc.JDBC4Connection@1b9a771] will not be managed by Spring
+2020-03-30 15:33:21.863 [messageContainer-1][DEBUG] c.x.s.mappers.SyncPkgMapper.syncData org.apache.ibatis.logging.jdbc.BaseJdbcLogger[159]: ==>  Preparing: INSERT INTO ocr_key_set_config ( belong_company_name , start_position , regular_expression , dimset , key_word , y_max , type , x_min , content_max , number , content_rule , get_type , pz_type , file_type , y_min , col_multiple , x_max , id , aligned , get_type_str , key_position , file_name , map_name , customs_broker_id , col_digit , is_one_use , modified_date , keyword_type , last_update_time , login_user , is_use_python , company_name , organization_id , template_id , content_position , status ) VALUES ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? ) ON DUPLICATE KEY UPDATE belong_company_name = ? , start_position = ? , regular_expression = ? , dimset = ? , key_word = ? , y_max = ? , type = ? , x_min = ? , content_max = ? , number = ? , content_rule = ? , get_type = ? , pz_type = ? , file_type = ? , y_min = ? , col_multiple = ? , x_max = ? , aligned = ? , get_type_str = ? , key_position = ? , file_name = ? , map_name = ? , customs_broker_id = ? , col_digit = ? , is_one_use = ? , modified_date = ? , keyword_type = ? , last_update_time = ? , login_user = ? , is_use_python = ? , company_name = ? , organization_id = ? , template_id = ? , content_position = ? , status = ? 
+2020-03-30 15:33:21.869 [messageContainer-1][DEBUG] c.x.s.mappers.SyncPkgMapper.syncData org.apache.ibatis.logging.jdbc.BaseJdbcLogger[159]: ==> Parameters: (String), (String), (String), (String), 商品名称(String), 0(Integer), goods_info(String), 0(Integer), 0(Integer), (String), (String), (String), 0(String), way_bill(String), 0(Integer), (String), 0(Integer), 711ee8ab-cf17-4fa2-a54d-29a9f5dd6d10(String), (String), (String), 1(Integer), 运单文件(String), p_name(String), 00000000-0000-0000-0000-000000000001(String), (String), 0(String), 2020-03-30 15:33:15(String), 1(Integer), 2020-03-30 15:33:15(String), 管理员(String), 0(String), bgd001(String), 00000000-0000-0000-0000-000000000001(String), (String), 下(String), 1(Integer), (String), (String), (String), (String), 商品名称(String), 0(Integer), goods_info(String), 0(Integer), 0(Integer), (String), (String), (String), 0(String), way_bill(String), 0(Integer), (String), 0(Integer), (String), (String), 1(Integer), 运单文件(String), p_name(String), 00000000-0000-0000-0000-000000000001(String), (String), 0(String), 2020-03-30 15:33:15(String), 1(Integer), 2020-03-30 15:33:15(String), 管理员(String), 0(String), bgd001(String), 00000000-0000-0000-0000-000000000001(String), (String), 下(String), 1(Integer)
+2020-03-30 15:33:21.957 [messageContainer-1][DEBUG] c.x.s.mappers.SyncPkgMapper.syncData org.apache.ibatis.logging.jdbc.BaseJdbcLogger[159]: <==    Updates: 2
+2020-03-30 15:33:21.959 [messageContainer-1][DEBUG] org.mybatis.spring.SqlSessionUtils   org.mybatis.spring.SqlSessionUtils[191]: Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1750419]
+2020-03-30 15:33:21.960 [messageContainer-1][DEBUG] com.x3platform.InternalLogger        com.x3platform.sync.services.impl.SyncPkgServiceImpl[532]: sync data:{table name:ocr_key_set_config} finished.
