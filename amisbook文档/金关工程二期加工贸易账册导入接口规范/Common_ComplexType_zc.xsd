@@ -1,0 +1,1633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by hanwei (EMBRACE) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:simpleType name="Date">
+		<xs:annotation>
+			<xs:documentation>日期时间类型</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="10"/>
+			<xs:pattern value="([1-9]{4}-(0[1-9]|1[0-2])-[0-3][0-9])?"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="DateTime">
+		<xs:annotation>
+			<xs:documentation>日期时间类型</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="19"/>
+			<xs:pattern value="([1-9]{4}-(0[1-9]|1[0-2])-[0-3][0-9] [0-2][0-3]:[0-5][0-9]:[0-5][0-9])?"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="EtArcrpBsc">
+		<xs:annotation>
+			<xs:documentation>联网企业档案库基本</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="etArcrpNo" nillable="true">
+				<xs:annotation>
+					<xs:documentation>联网企业档案库编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="64"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="chgTmsCnt" nillable="true">
+				<xs:annotation>
+					<xs:documentation>变更次数</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:long">
+						<xs:totalDigits value="19"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="etpsPreentNo" nillable="true">
+				<xs:annotation>
+					<xs:documentation>企业预录入编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="64"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="masterCuscd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>主管关区代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="bizopEtpsSccd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>经营企业社会信用代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="18"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="bizopEtpsno" nillable="true">
+				<xs:annotation>
+					<xs:documentation>经营企业编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="bizopEtpsNm" nillable="true">
+				<xs:annotation>
+					<xs:documentation>经营企业名称</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="512"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="prcsEtpsSccd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>加工企业社会信用代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="18"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="prcsEtpsno" nillable="true">
+				<xs:annotation>
+					<xs:documentation>加工企业编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="prcsEtpsNm" nillable="true">
+				<xs:annotation>
+					<xs:documentation>加工企业名称</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="512"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="dclEtpsSccd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>申报企业社会信用代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="18"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="dclEtpsno" nillable="true">
+				<xs:annotation>
+					<xs:documentation>申报企业编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="dclEtpsNm" nillable="true">
+				<xs:annotation>
+					<xs:documentation>申报企业名称</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="512"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="dclEtpsTypecd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>申报企业类型代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="concAddr" nillable="true">
+				<xs:annotation>
+					<xs:documentation>联系地址</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="512"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="telnum" nillable="true">
+				<xs:annotation>
+					<xs:documentation>电话号码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="15"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="finishValidTime" type="Date" nillable="true">
+				<xs:annotation>
+					<xs:documentation>结束有效时间</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="prcsPrdcAbltAmt" nillable="true">
+				<xs:annotation>
+					<xs:documentation>加工生产能力金额</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:fractionDigits value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="apcretNo" nillable="true">
+				<xs:annotation>
+					<xs:documentation>批准证编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="64"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="riskAssureMarkcd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>风险担保标记代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="rltFormNo" nillable="true">
+				<xs:annotation>
+					<xs:documentation>关联单证编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="64"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="dclSourceMarkcd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>申报来源标记代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="dclTypecd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>申报类型代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="dclTime" type="DateTime" nillable="true">
+				<xs:annotation>
+					<xs:documentation>申报时间</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="emapvStucd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>审批状态代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="exeMarkcd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>执行标记代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="putrecApprTime" type="DateTime" nillable="true">
+				<xs:annotation>
+					<xs:documentation>备案批准时间</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="chgApprTime" type="DateTime" nillable="true">
+				<xs:annotation>
+					<xs:documentation>变更批准时间</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="rmk" nillable="true">
+				<xs:annotation>
+					<xs:documentation>备注</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="4000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="EmsPutrecBsc">
+		<xs:annotation>
+			<xs:documentation>账册备案基本</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="emsNo" nillable="true">
+				<xs:annotation>
+					<xs:documentation>帐册编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="64"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="chgTmsCnt" nillable="true">
+				<xs:annotation>
+					<xs:documentation>变更次数</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:long">
+						<xs:totalDigits value="19"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="etpsPreentNo" nillable="true">
+				<xs:annotation>
+					<xs:documentation>企业预录入编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="64"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="masterCuscd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>主管关区代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="bizopEtpsSccd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>经营企业社会信用代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="18"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="bizopEtpsno" nillable="true">
+				<xs:annotation>
+					<xs:documentation>经营企业编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="bizopEtpsNm" nillable="true">
+				<xs:annotation>
+					<xs:documentation>经营企业名称</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="512"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="rvsngdEtpsSccd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>收发货企业社会信用代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="18"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="rcvgdEtpsno" nillable="true">
+				<xs:annotation>
+					<xs:documentation>收货企业编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="rcvgdEtpsNm" nillable="true">
+				<xs:annotation>
+					<xs:documentation>收货企业名称</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="512"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="dclEtpsSccd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>申报企业社会信用代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="18"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="dclEtpsno" nillable="true">
+				<xs:annotation>
+					<xs:documentation>申报企业编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="dclEtpsNm" nillable="true">
+				<xs:annotation>
+					<xs:documentation>申报企业名称</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="512"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="dclEtpsTypecd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>申报企业类型代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="emsTypecd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>账册类型代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="dclTypecd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>申报类型代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="finishValidDate" type="Date" nillable="true">
+				<xs:annotation>
+					<xs:documentation>结束有效日期</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="apcretNo" nillable="true">
+				<xs:annotation>
+					<xs:documentation>批准证编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="64"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="netwkEtpsArcrpNo" nillable="true">
+				<xs:annotation>
+					<xs:documentation>联网企业档案库编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="64"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="maxTovrAmt" nillable="true">
+				<xs:annotation>
+					<xs:documentation>最大周转金额</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:fractionDigits value="5"/>
+						<xs:totalDigits value="25"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="dclTime" type="DateTime" nillable="true">
+				<xs:annotation>
+					<xs:documentation>申报时间</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ucnsDclSegcd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>单耗申报环节代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="dclMarkcd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>申报标记代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="emapvStucd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>审批状态代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="pauseImpexpMarkcd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>暂停进出口标记代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="pauseChgMarkcd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>暂停变更标记代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="putrecApprTime" type="DateTime" nillable="true">
+				<xs:annotation>
+					<xs:documentation>备案批准时间</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="chgApprTime" type="DateTime" nillable="true">
+				<xs:annotation>
+					<xs:documentation>变更批准时间</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="rcntVclrTime" type="DateTime" nillable="true">
+				<xs:annotation>
+					<xs:documentation>最近核销时间</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="vclrApplyTime" type="DateTime" nillable="true">
+				<xs:annotation>
+					<xs:documentation>核销申请时间</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="vclrPridVal" nillable="true">
+				<xs:annotation>
+					<xs:documentation>核销周期值</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="19"/>
+						<xs:fractionDigits value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="adjaccMarkcd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>核算标记代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="adjaccTmsCnt" nillable="true">
+				<xs:annotation>
+					<xs:documentation>核算次数</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:long">
+						<xs:totalDigits value="19"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ucnsVernoCntrFlag" nillable="true">
+				<xs:annotation>
+					<xs:documentation>单耗版本号控制标志</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="rcaseMarkcd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>涉案标记代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="etpsPosesSadjaQuaFlag" nillable="true">
+				<xs:annotation>
+					<xs:documentation>企业具备自核资格标志</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="rmk" nillable="true">
+				<xs:annotation>
+					<xs:documentation>备注</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="4000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="BondInvtBsc">
+		<xs:annotation>
+			<xs:documentation>保税清单基本</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="bondInvtNo" nillable="true">
+				<xs:annotation>
+					<xs:documentation>保税清单编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="64"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="chgTmsCnt" nillable="true">
+				<xs:annotation>
+					<xs:documentation>变更次数</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:long">
+						<xs:totalDigits value="19"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="invtPreentNo" nillable="true">
+				<xs:annotation>
+					<xs:documentation>清单预录入编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="64"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="putrecNo" nillable="true">
+				<xs:annotation>
+					<xs:documentation>备案编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="64"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="etpsInnerInvtNo" nillable="true">
+				<xs:annotation>
+					<xs:documentation>企业内部清单编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="64"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="bizopEtpsSccd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>经营企业社会信用代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="18"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="bizopEtpsno" nillable="true">
+				<xs:annotation>
+					<xs:documentation>经营企业编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="bizopEtpsNm" nillable="true">
+				<xs:annotation>
+					<xs:documentation>经营企业名称</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="512"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="rvsngdEtpsSccd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>收发货企业社会信用代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="18"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="rcvgdEtpsno" nillable="true">
+				<xs:annotation>
+					<xs:documentation>收货企业编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="rcvgdEtpsNm" nillable="true">
+				<xs:annotation>
+					<xs:documentation>收货企业名称</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="512"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="dclEtpsSccd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>申报企业社会信用代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="18"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="dclEtpsno" nillable="true">
+				<xs:annotation>
+					<xs:documentation>申报企业编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="dclEtpsNm" nillable="true">
+				<xs:annotation>
+					<xs:documentation>申报企业名称</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="512"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="invtDclTime" type="DateTime" nillable="true">
+				<xs:annotation>
+					<xs:documentation>清单申报日期</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="entryDclTime" type="DateTime" nillable="true">
+				<xs:annotation>
+					<xs:documentation>报关单申报时间</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="entryNo" nillable="true">
+				<xs:annotation>
+					<xs:documentation>报关单编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="64"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="rltInvtNo" nillable="true">
+				<xs:annotation>
+					<xs:documentation>关联清单编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="64"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="rltPutrecNo" nillable="true">
+				<xs:annotation>
+					<xs:documentation>关联备案编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="64"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="rltEntryNo" nillable="true">
+				<xs:annotation>
+					<xs:documentation>关联报关单编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="64"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="rltEntryBizopEtpsSccd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>关联报关单经营企业社会信用代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="18"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="rltEntryBizopEtpsno" nillable="true">
+				<xs:annotation>
+					<xs:documentation>关联报关单经营企业编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="rltEntryBizopEtpsNm" nillable="true">
+				<xs:annotation>
+					<xs:documentation>关联报关单经营企业名称</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="512"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="impexpPortcd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>进出口口岸代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="dclPlcCuscd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>申报地关区代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="impexpMarkcd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>进出口标记代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="mtpckEndprdMarkcd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>料件成品标记代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="supvModecd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>监管方式代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="6"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="trspModecd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>运输方式代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="6"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="applyNo" nillable="true">
+				<xs:annotation>
+					<xs:documentation>申请编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="64"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="dclcusFlag" nillable="true">
+				<xs:annotation>
+					<xs:documentation>是否报关标志</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="dclcusTypecd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>报关类型代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="25"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="prevdTime" type="DateTime" nillable="true">
+				<xs:annotation>
+					<xs:documentation>预核扣时间</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="formalVrfdedTime" type="DateTime" nillable="true">
+				<xs:annotation>
+					<xs:documentation>正式核扣时间</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="invtIochkptStucd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>清单进出卡口状态代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="vrfdedMarkcd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>核扣标记代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="invtStucd" nillable="true">
+				<xs:annotation>
+					<xs:documentation>清单状态代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="vrfdedModecd">
+				<xs:annotation>
+					<xs:documentation>核扣方式代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="duCode">
+				<xs:annotation>
+					<xs:documentation>核算代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="rmk" nillable="true">
+				<xs:annotation>
+					<xs:documentation>备注</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="4000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="HdeApprResult">
+		<xs:annotation>
+			<xs:documentation>回执表头</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="etpsPreentNo">
+				<xs:annotation>
+					<xs:documentation>企业预录入编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="64"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="businessId">
+				<xs:annotation>
+					<xs:documentation>单证编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="128"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="tmsCnt">
+				<xs:annotation>
+					<xs:documentation>变更/报核次数</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:long">
+						<xs:totalDigits value="19"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="typecd">
+				<xs:annotation>
+					<xs:documentation>业务类型代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="manageResult">
+				<xs:annotation>
+					<xs:documentation>业务类型代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="manageDate" type="DateTime">
+				<xs:annotation>
+					<xs:documentation>处理日期</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="rmk">
+				<xs:annotation>
+					<xs:documentation>备注</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="EmsChgoffBsc">
+		<xs:annotation>
+			<xs:documentation>账册报核表头</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="emsNo">
+				<xs:annotation>
+					<xs:documentation>账册编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="64"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="chgoffTmsCnt">
+				<xs:annotation>
+					<xs:documentation>报核次数</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:long">
+						<xs:totalDigits value="19"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="chgoffTypecd">
+				<xs:annotation>
+					<xs:documentation>报核类型代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="25"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="chgoffBeginTime" type="Date">
+				<xs:annotation>
+					<xs:documentation>报核开始时间</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="chgoffDueTime" type="Date">
+				<xs:annotation>
+					<xs:documentation>报核截止时间</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="bizopEtpsSccd">
+				<xs:annotation>
+					<xs:documentation>经营企业社会信用代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="18"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="bizopEtpsno">
+				<xs:annotation>
+					<xs:documentation>经营企业编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="bizopEtpsNm">
+				<xs:annotation>
+					<xs:documentation>经营企业名称</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="512"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="rvsngdEtpsSccd">
+				<xs:annotation>
+					<xs:documentation>收发货企业社会信用代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="18"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="rcvgdEtpsno">
+				<xs:annotation>
+					<xs:documentation>收货企业编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="rcvgdEtpsNm">
+				<xs:annotation>
+					<xs:documentation>收货企业名称</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="512"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="impInvtTotalCnt">
+				<xs:annotation>
+					<xs:documentation>进口清单总数</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:long">
+						<xs:totalDigits value="19"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="expInvtTotalCnt">
+				<xs:annotation>
+					<xs:documentation>出口清单总数</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:long">
+						<xs:totalDigits value="19"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="chgoffMtpckTotalCnt">
+				<xs:annotation>
+					<xs:documentation>报核料件总数</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:long">
+						<xs:totalDigits value="19"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="chgoffEndprdTotalCnt">
+				<xs:annotation>
+					<xs:documentation>报核成品总数</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:long">
+						<xs:totalDigits value="19"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="chgoffLfmtTotalCnt">
+				<xs:annotation>
+					<xs:documentation>报核边角料总数</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:long">
+						<xs:totalDigits value="19"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="chgoffImprTotalCnt">
+				<xs:annotation>
+					<xs:documentation>报核残次品总数</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:long">
+						<xs:totalDigits value="19"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="impMtpckTotalAmt">
+				<xs:annotation>
+					<xs:documentation>进口料件总金额</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="25"/>
+						<xs:fractionDigits value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="expEndprdTotalAmt">
+				<xs:annotation>
+					<xs:documentation>出口成品总金额</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="25"/>
+						<xs:fractionDigits value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="inputTime" type="DateTime">
+				<xs:annotation>
+					<xs:documentation>录入时间</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="inputCusrno">
+				<xs:annotation>
+					<xs:documentation>录入关员编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="chgoffDclTime" type="DateTime">
+				<xs:annotation>
+					<xs:documentation>报核申报时间</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="fstSpareMarkcd">
+				<xs:annotation>
+					<xs:documentation>第一备用标记代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="spareAmt">
+				<xs:annotation>
+					<xs:documentation>备用金额</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="25"/>
+						<xs:fractionDigits value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="spareQty">
+				<xs:annotation>
+					<xs:documentation>备用数量</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:decimal">
+						<xs:totalDigits value="19"/>
+						<xs:fractionDigits value="5"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="rmk">
+				<xs:annotation>
+					<xs:documentation>备注</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="4000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="chgoffMarkcd">
+				<xs:annotation>
+					<xs:documentation>报核标记代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="emapvMarkcd">
+				<xs:annotation>
+					<xs:documentation>审批标记代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="emapvTime" type="DateTime">
+				<xs:annotation>
+					<xs:documentation>审批时间</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dspsMarkcd">
+				<xs:annotation>
+					<xs:documentation>处理标记代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="dclSourceMarkcd">
+				<xs:annotation>
+					<xs:documentation>申报来源标记代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="masterCuscd">
+				<xs:annotation>
+					<xs:documentation>主管关区代码
+</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="CheckInfo">
+		<xs:annotation>
+			<xs:documentation>检查信息</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="note">
+				<xs:annotation>
+					<xs:documentation>检查信息</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+<xs:complexType name="SasCmbBsc">
+		<xs:annotation>
+			<xs:documentation>耗料单基本信息</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="cmbNo">
+				<xs:annotation>
+					<xs:documentation>耗料单编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="64"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="chgTmsCnt">
+				<xs:annotation>
+					<xs:documentation>变更次数</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="19"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="etpsPreentNo">
+				<xs:annotation>
+					<xs:documentation>统一编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="18"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="dclTypecd">
+				<xs:annotation>
+					<xs:documentation>申报类型</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="cmTypecd">
+				<xs:annotation>
+					<xs:documentation>耗料单类型</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="emsNo">
+				<xs:annotation>
+					<xs:documentation>账册编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="64"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="masterCuscd">
+				<xs:annotation>
+					<xs:documentation>主管关区</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="cmBeginTime" type="Date">
+				<xs:annotation>
+					<xs:documentation>耗料单开始时间</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="cmEndTime" type="Date">
+				<xs:annotation>
+					<xs:documentation>耗料单截止时间</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="bizopEtpsSccd">
+				<xs:annotation>
+					<xs:documentation>经营企业社会信用代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="18"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="bizopEtpsno">
+				<xs:annotation>
+					<xs:documentation>经营企业编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="bizopEtpsNm">
+				<xs:annotation>
+					<xs:documentation>经营企业名称</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="512"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="rvsngdEtpsSccd">
+				<xs:annotation>
+					<xs:documentation>收发货企业社会信用代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="18"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="rcvgdEtpsno">
+				<xs:annotation>
+					<xs:documentation>收货企业编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="rcvgdEtpsNm">
+				<xs:annotation>
+					<xs:documentation>收货企业名称</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="512"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="emapvStucd">
+				<xs:annotation>
+					<xs:documentation>审批标记</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="putrecApprTime" type="Date">
+				<xs:annotation>
+					<xs:documentation>备案审批时间</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="chgApprTime" type="Date">
+				<xs:annotation>
+					<xs:documentation>变更审批时间</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dclTime" type="Date">
+				<xs:annotation>
+					<xs:documentation>申报时间</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="dclMarkcd">
+				<xs:annotation>
+					<xs:documentation>申报来源</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="stucd">
+				<xs:annotation>
+					<xs:documentation>状态</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="rmk">
+				<xs:annotation>
+					<xs:documentation>备注</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="4000"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>	
+</xs:schema>

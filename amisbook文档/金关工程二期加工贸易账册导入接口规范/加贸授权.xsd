@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2013 (http://www.altova.com) by  () -->
+<xs:schema xmlns:nems="http://www.chinaport.gov.cn/nems" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.chinaport.gov.cn/nems" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="CopAuthSaveRequest">
+		<xs:annotation>
+			<xs:documentation>企业间授权暂存请求</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="WgtCopAuthInfo" type="nems:WgtCopAuthInfo" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CopDetailSaveRequest">
+		<xs:annotation>
+			<xs:documentation>企业内授权暂存请求</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="WgtCopAuthInfoDetail" type="nems:WgtCopAuthInfoDetail" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="WgtCopAuthInfo">
+		<xs:annotation>
+			<xs:documentation>企业间授权信息</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="SeqNo">
+				<xs:annotation>
+					<xs:documentation>中心统一编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SysId">
+				<xs:annotation>
+					<xs:documentation>系统编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="EtpsNo">
+				<xs:annotation>
+					<xs:documentation>授权企业编码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="EtpsSccd">
+				<xs:annotation>
+					<xs:documentation>授权企业信用代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SyEtpsNo">
+				<xs:annotation>
+					<xs:documentation>被授权企业编码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SyEtpsSccd">
+				<xs:annotation>
+					<xs:documentation>被授权企业信用代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="AuthCode">
+				<xs:annotation>
+					<xs:documentation>权限代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="AuthTime">
+				<xs:annotation>
+					<xs:documentation>授权日期</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Validate">
+				<xs:annotation>
+					<xs:documentation>有效期</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="AllOperator">
+				<xs:annotation>
+					<xs:documentation>全部操作员</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SyEtpsName">
+				<xs:annotation>
+					<xs:documentation>代理企业名称</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SysName">
+				<xs:annotation>
+					<xs:documentation>子系统名称</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="AuthName">
+				<xs:annotation>
+					<xs:documentation>权限类型名称</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="WgtCopAuthInfoDetail">
+		<xs:annotation>
+			<xs:documentation>企业内授权信息</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="SeqNo" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>中心统一编号</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AuthSeqNo" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>企业间授权统一编号</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="IcCardNo" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>操作员卡号或用户编号</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="AuthTime" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>授权日期</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ValidDate" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>有效期</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="EtpsNo">
+				<xs:annotation>
+					<xs:documentation>授权企业编码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="EtpsSccd">
+				<xs:annotation>
+					<xs:documentation>授权企业信用代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SyEtpsNo">
+				<xs:annotation>
+					<xs:documentation>被授权企业编码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SyEtpsSccd">
+				<xs:annotation>
+					<xs:documentation>被授权企业信用代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="AllOperator">
+				<xs:annotation>
+					<xs:documentation>全部操作员</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SysId">
+				<xs:annotation>
+					<xs:documentation>系统编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SysName">
+				<xs:annotation>
+					<xs:documentation>子系统名称</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="AllOperatorName">
+				<xs:annotation>
+					<xs:documentation>是否全部操作员中文</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
