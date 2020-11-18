@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Signature>
+  <SignedInfo>
+    <CanonicalizationMethod Algorithm=""></CanonicalizationMethod>
+    <SignatureMethod Algorithm=""></SignatureMethod>
+    <Reference URI="">
+      <DigestMethod Algorithm=""></DigestMethod>
+      <DigestValue></DigestValue>
+    </Reference>
+  </SignedInfo>
+  <SignatureValue></SignatureValue>
+  <KeyInfo>
+    <KeyName></KeyName>
+  </KeyInfo>
+  <Object Id="">
+    <Package>
+      <EnvelopInfo>
+        <version>1.0</version>
+        <business_id>BSHF2020091500001</business_id>
+        <message_id>1600126463674</message_id>
+        <file_name>SAS_SAS121_BSHF2020091500001_8ea6e029-e926-4931-b215-400ecf392ad9_20200915073423.zip</file_name>
+        <message_type>SAS121</message_type>
+        <sender_id>1600126463676</sender_id>
+        <receiver_id>16001264636761</receiver_id>
+        <Ic_Card>8930000052633</Ic_Card>
+      </EnvelopInfo>
+      <DataInfo>
+        <PocketInfo>
+          <is_unstructured></is_unstructured>
+        </PocketInfo>
+        <BussinessData>
+          <PassPortMessage>
+            <PassportHead>
+              <PassportNo></PassportNo>
+              <PassportTypecd>2</PassportTypecd>
+              <MasterCuscd>8022</MasterCuscd>
+              <DclTypecd>1</DclTypecd>
+              <IoTypecd>I</IoTypecd>
+              <BindTypecd>3</BindTypecd>
+              <RltTbTypecd>1</RltTbTypecd>
+              <RltNo>QD802220I000000365</RltNo>
+              <AreainOriactNo>L8022B19A002</AreainOriactNo>
+              <AreainEtpsno>5005W60001</AreainEtpsno>
+              <AreainEtpsNm>中新（重庆）多式联运物流发展有限公司两江新区分公司</AreainEtpsNm>
+              <AreainEtpsSccd>91500000MA60MUG36K</AreainEtpsSccd>
+              <VehicleNo>渝BT8708</VehicleNo>
+              <VehicleIcNo></VehicleIcNo>
+              <ContainerNo>MAEU4040328</ContainerNo>
+              <VehicleWt>8229.00000</VehicleWt>
+              <VehicleFrameNo>渝A6059挂</VehicleFrameNo>
+              <VehicleFrameWt>6589.00000</VehicleFrameWt>
+              <ContainerType></ContainerType>
+              <ContainerWt>4100.00000</ContainerWt>
+              <TotalWt>40820.00000</TotalWt>
+              <TotalGrossWt>21902.00000</TotalGrossWt>
+              <TotalNetWt>17982.00000</TotalNetWt>
+              <DclErConc>闵淋</DclErConc>
+              <DclEtpsno>5003980029</DclEtpsno>
+              <DclEtpsNm>重庆安捷国际运输代理有限公司</DclEtpsNm>
+              <DclEtpsSccd>9150000071093924XF</DclEtpsSccd>
+              <InputCode>5003980029</InputCode>
+              <InputSccd>9150000071093924XF</InputSccd>
+              <InputName>重庆安捷国际运输代理有限公司</InputName>
+              <EtpsPreentNo>BSHF2020091500001</EtpsPreentNo>
+              <Rmk></Rmk>
+            </PassportHead>
+            <PassportList>
+              <PassportNo>BSHF2020091500001</PassportNo>
+              <PassportSeqNo>1</PassportSeqNo>
+              <GdsMtno>594642</GdsMtno>
+              <Gdecd>7003190001</Gdecd>
+              <GdsNm>液晶显示屏用原板玻璃</GdsNm>
+              <GrossWt>21902.00000</GrossWt>
+              <NetWt>17982.00000</NetWt>
+              <RltGdsSeqno>1</RltGdsSeqno>
+              <DclUnitcd>020</DclUnitcd>
+              <DclQty>2320.00000</DclQty>
+              <Rmk></Rmk>
+            </PassportList>
+            <PassportAcmp>
+              <PassPortNo></PassPortNo>
+              <RtlBillTypecd>1</RtlBillTypecd>
+              <RtlBillNo>QD802220I000000365</RtlBillNo>
+            </PassportAcmp>
+            <OperCusRegCode>5003980029</OperCusRegCode>
+          </PassPortMessage>
+          <DelcareFlag>0</DelcareFlag>
+        </BussinessData>
+      </DataInfo>
+    </Package>
+  </Object>
+</Signature>

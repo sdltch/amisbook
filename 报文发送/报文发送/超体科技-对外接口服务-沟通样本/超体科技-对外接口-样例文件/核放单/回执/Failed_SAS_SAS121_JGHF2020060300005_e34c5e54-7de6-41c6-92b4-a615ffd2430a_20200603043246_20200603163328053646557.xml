@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CommonResponeMessage>
+    <SeqNo></SeqNo>
+    <EtpsPreentNo>BVS4711</EtpsPreentNo>
+    <CheckInfo>没有权限暂存核放单，请确认区内单位录入是否正确，或者是否被授权。</CheckInfo>
+    <DealFlag>-1</DealFlag>
+</CommonResponeMessage>

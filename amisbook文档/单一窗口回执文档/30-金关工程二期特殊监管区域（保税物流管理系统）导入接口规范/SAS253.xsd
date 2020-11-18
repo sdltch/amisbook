@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- edited with XMLSpy v2009 (http://www.altova.com) by zhaoziyue (EMBRACE) -->
+<xs:schema xmlns="http://www.w3.org/2000/09/xmldsig#" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.w3.org/2000/09/xmldsig#" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="HDE_W3C_Common.xsd"/>
+	<xs:include schemaLocation="Common_ComplexType.xsd"/>
+	<xs:element name="Signature">
+		<xs:annotation>
+			<xs:documentation>xml数字签名根节点</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="SignedInfo"/>
+				<xs:element ref="SignatureValue"/>
+				<xs:element ref="KeyInfo"/>
+				<xs:element name="Object">
+					<xs:annotation>
+						<xs:documentation>业务实体报文</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="Package"/>
+						</xs:sequence>
+						<xs:attribute name="Id" type="xs:string"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Package">
+		<xs:annotation>
+			<xs:documentation>业务报文数据节点</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="EnvelopInfo"/>
+				<xs:element ref="DataInfo"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DataInfo">
+		<xs:annotation>
+			<xs:documentation>业务内容</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="PocketInfo"/>
+				<xs:element name="BussinessData">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="SAS253">
+								<xs:annotation>
+									<xs:documentation>两步申报核放单过卡回执</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="HdeApprResult" type="HdeApprResult" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>两步申报核放单过卡回执</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="Sas2stepPassportBsc" type="Sas2stepPassportBsc" minOccurs="0" maxOccurs="unbounded">
+											<xs:annotation>
+												<xs:documentation>两步申报核放单基本</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

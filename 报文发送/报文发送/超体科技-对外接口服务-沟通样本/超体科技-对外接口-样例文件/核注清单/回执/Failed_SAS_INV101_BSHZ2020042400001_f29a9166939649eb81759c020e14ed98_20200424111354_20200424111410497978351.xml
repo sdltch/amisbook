@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CommonResponeMessage>
+    <SeqNo></SeqNo>
+    <EtpsPreentNo></EtpsPreentNo>
+    <CheckInfo>企业内部清单编号不可为空。
+</CheckInfo>
+    <DealFlag>-1</DealFlag>
+</CommonResponeMessage>

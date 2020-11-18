@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2013 (http://www.altova.com) by  () -->
+<xs:schema xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:ceb="http://www.chinaport.gov.cn/ceb" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://www.chinaport.gov.cn/ceb" targetNamespace="http://www.chinaport.gov.cn/ceb" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="xmldsig-core-schema.xsd"/>
+	<xs:element name="CEBJ02Message">
+		<xs:annotation>
+			<xs:documentation>跨境电商检查回执报文</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ceb:responseResult" maxOccurs="100">
+					<xs:annotation>
+						<xs:documentation>核注清单跨境回执表头</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="guid" use="required">
+				<xs:annotation>
+					<xs:documentation>报文的36位系统唯一序号（英文字母大写）</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="36"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="version" use="required">
+				<xs:annotation>
+					<xs:documentation>报文版本号 默认1.0</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="10"/>
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="CEBJ22Message">
+		<xs:annotation>
+			<xs:documentation>跨境电商检查回执报文</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ceb:responseResult" maxOccurs="100">
+					<xs:annotation>
+						<xs:documentation>核注清单跨境回执表头</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="guid" use="required">
+				<xs:annotation>
+					<xs:documentation>报文的36位系统唯一序号（英文字母大写）</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="36"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="version" use="required">
+				<xs:annotation>
+					<xs:documentation>报文版本号 默认1.0</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="10"/>
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="DateTime">
+		<xs:annotation>
+			<xs:documentation>日期时间类型</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="19"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:element name="responseResult">
+		<xs:complexType>
+			<xs:annotation>
+				<xs:documentation>核注清单跨境回执表头</xs:documentation>
+			</xs:annotation>
+			<xs:sequence>
+				<xs:element name="guid" nillable="false">
+					<xs:annotation>
+						<xs:documentation>36位系统唯一序号（英文字母大写）</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:length value="36"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="invtSeqNo" nillable="true">
+					<xs:annotation>
+						<xs:documentation>核注清单统一编号</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="18"/>
+							<xs:minLength value="1"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="code" nillable="false">
+					<xs:annotation>
+						<xs:documentation>CEBJ02Message应答码，0:校验成功
+1:校验失败
+-2:报文解析失败
+-1:系统内部错误(catch异常，大于0表示业务处理失败，小于0表示系统处理异常)
+</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:length value="1"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="responseDate" type="ceb:DateTime" nillable="false">
+					<xs:annotation>
+						<xs:documentation>处理回执日期</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="results" nillable="false">
+					<xs:annotation>
+						<xs:documentation>处理消息列表</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="information" nillable="true" minOccurs="1" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>返回信息描述</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="255"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

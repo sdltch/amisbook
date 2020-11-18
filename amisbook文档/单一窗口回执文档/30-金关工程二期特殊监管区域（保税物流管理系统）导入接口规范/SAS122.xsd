@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 被2012 () 使用XMLSpy v编辑的 (http://www.altova.com) by -->
+<!-- edited with XMLSpy v2013 (http://www.altova.com) by  () -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<!--核放单调取授权-->
+	<xs:element name="PassportAuthRequest">
+		<xs:annotation>
+			<xs:documentation>核放单调取关联单证授权请求</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="PassportAuthInfo" type="PassportAuthInfo" maxOccurs="unbounded"/>
+				<xs:element name="EtpsPreentNo">
+					<xs:annotation>
+						<xs:documentation>企业内部编号</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="64"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="PassportAuthInfo">
+		<xs:annotation>
+			<xs:documentation>核放单调取关联单证授权信息</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="SysId">
+				<xs:annotation>
+					<xs:documentation>授权系统编号：“Z7”-海关特殊监管区域；
+“Z8”-保税物流管理；</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="EtpsNo">
+				<xs:annotation>
+					<xs:documentation>授权企业海关编码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="EtpsSccd" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>授权企业社会信用代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="EtpsName">
+				<xs:annotation>
+					<xs:documentation>授权企业名称</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="BillType">
+				<xs:annotation>
+					<xs:documentation>业务单证类型：“1”-核注清单
+               “2”-出入库单</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="BillNo" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>业务单证号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SyEtpsNo">
+				<xs:annotation>
+					<xs:documentation>被授权企业海关编码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SyEtpsSccd" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>被授权企业社会信用代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SyEtpsName">
+				<xs:annotation>
+					<xs:documentation>被授权企业名称</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!--公共信息-->
+	<xs:element name="CommonResponeMessage">
+		<xs:annotation>
+			<xs:documentation>导入通用响应信息</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="SeqNo">
+					<xs:annotation>
+						<xs:documentation>中心统一编号</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="18"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="EtpsPreentNo" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>客户端内部编号</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="1"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="CheckInfo">
+					<xs:annotation>
+						<xs:documentation>响应信息</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="8"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="DealFlag">
+					<xs:annotation>
+						<xs:documentation>响应代码：“0”-导入成功</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="8"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="KeyInfo">
+		<xs:annotation>
+			<xs:documentation>签名所用的证书信息</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="KeyName">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:minLength value="2"/>
+							<xs:maxLength value="32"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SignatureValue">
+		<xs:annotation>
+			<xs:documentation>签名值</xs:documentation>
+		</xs:annotation>
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:minLength value="0"/>
+				<xs:maxLength value="256"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="SignedInfo">
+		<xs:annotation>
+			<xs:documentation>计算签名值所用的算法</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="CanonicalizationMethod">
+					<xs:annotation>
+						<xs:documentation>规范化算法</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:attribute name="Algorithm" use="required">
+							<xs:simpleType>
+								<xs:restriction base="xs:anyURI">
+									<xs:enumeration value="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="SignatureMethod">
+					<xs:annotation>
+						<xs:documentation>数字签名算法</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:attribute name="Algorithm" use="required">
+							<xs:simpleType>
+								<xs:restriction base="xs:anyURI">
+									<xs:enumeration value="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+									<xs:enumeration value="http://www.w3.org/2001/04/xmldsig-more#rsa-md5"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Reference">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="DigestMethod">
+								<xs:annotation>
+									<xs:documentation>摘要算法</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:attribute name="Algorithm" use="required">
+										<xs:simpleType>
+											<xs:restriction base="xs:anyURI">
+												<xs:enumeration value="http://www.w3.org/2000/09/xmldsig#sha1"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="DigestValue">
+								<xs:annotation>
+									<xs:documentation>摘要值</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:minLength value="0"/>
+										<xs:maxLength value="256"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="URI" type="xs:string" use="required"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="EnvelopInfo">
+		<xs:annotation>
+			<xs:documentation>报文头</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="version">
+					<xs:annotation>
+						<xs:documentation>版本编号</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="11"/>
+							<xs:minLength value="3"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="business_id" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>业务单证号</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="128"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="message_id">
+					<xs:annotation>
+						<xs:documentation>报文唯一编号</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:minLength value="1"/>
+							<xs:maxLength value="128"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="file_name">
+					<xs:annotation>
+						<xs:documentation>用户原始报文名，主要用于用户查询</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:minLength value="4"/>
+							<xs:maxLength value="128"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="message_type">
+					<xs:annotation>
+						<xs:documentation>报文类型</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:minLength value="6"/>
+							<xs:maxLength value="16"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="sender_id">
+					<xs:annotation>
+						<xs:documentation>发送方编号</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:minLength value="4"/>
+							<xs:maxLength value="16"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="receiver_id">
+					<xs:annotation>
+						<xs:documentation>接收方编号</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:minLength value="4"/>
+							<xs:maxLength value="16"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="send_time" type="xs:dateTime">
+					<xs:annotation>
+						<xs:documentation>发送时间</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="Ic_Card">
+					<xs:annotation>
+						<xs:documentation>平台用户所用ic卡号</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string"/>
+					</xs:simpleType>
+				</xs:element>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="any_data">
+		<xs:annotation>
+			<xs:documentation>业务数据内容</xs:documentation>
+		</xs:annotation>
+		<xs:complexType/>
+	</xs:element>
+	<xs:element name="PocketInfo">
+		<xs:annotation>
+			<xs:documentation>包信息</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="is_unstructured" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>1-非格式化</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:length value="1"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Package">
+		<xs:annotation>
+			<xs:documentation>业务报文数据节点</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="EnvelopInfo"/>
+				<xs:element ref="DataInfo"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DataInfo">
+		<xs:annotation>
+			<xs:documentation>业务内容</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="BussinessData">
+					<xs:annotation>
+						<xs:documentation>存放业务数据</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="PassportAuthRequest"/>
+							<xs:element name="DelcareFlag" type="xs:int">
+								<xs:annotation>
+									<xs:documentation>申报标志 :1--申报；</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Signature">
+		<xs:annotation>
+			<xs:documentation>xml数字签名根节点</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="SignedInfo"/>
+				<xs:element ref="SignatureValue"/>
+				<xs:element ref="KeyInfo"/>
+				<xs:element name="Object">
+					<xs:annotation>
+						<xs:documentation>业务实体报文</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="Package"/>
+						</xs:sequence>
+						<xs:attribute name="Id" type="xs:string"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

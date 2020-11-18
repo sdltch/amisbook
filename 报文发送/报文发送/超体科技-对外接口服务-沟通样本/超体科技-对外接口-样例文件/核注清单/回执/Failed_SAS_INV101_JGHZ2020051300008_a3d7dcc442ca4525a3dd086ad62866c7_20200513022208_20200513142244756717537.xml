@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CommonResponeMessage>
+    <SeqNo></SeqNo>
+    <EtpsPreentNo>JGHZZ2020050600128</EtpsPreentNo>
+    <CheckInfo>该操作企业不是经营单位或加工单位之一，并且没有被经营单位或加工单位授权操作数据！</CheckInfo>
+    <DealFlag>-1</DealFlag>
+</CommonResponeMessage>
