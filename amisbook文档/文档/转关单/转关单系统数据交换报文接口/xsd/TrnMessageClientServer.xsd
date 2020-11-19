@@ -1,0 +1,1658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by YYC (EMBRACE) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:trn="http://www.chinaport.gov.cn/trn" targetNamespace="http://www.chinaport.gov.cn/trn" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="TrnDeleteRequest">
+		<xs:annotation>
+			<xs:documentation>转关单删除请求数据</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="TransPreId">
+					<xs:annotation>
+						<xs:documentation>统一编号</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="18"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TrnQueryListRequest">
+		<xs:annotation>
+			<xs:documentation>转关单查询请求数据</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="OperType">
+					<xs:annotation>
+						<xs:documentation>查询类型：0：普通查询 1：修改查询  2：复制查询</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="1"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="CopCode">
+					<xs:annotation>
+						<xs:documentation>操作企业组织机构代码</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="9"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="BeginDate">
+					<xs:annotation>
+						<xs:documentation>查询开始日期</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="8"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="EndDate">
+					<xs:annotation>
+						<xs:documentation>查询截至日期</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="8"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="InputOpId">
+					<xs:annotation>
+						<xs:documentation>录入员编号</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="13"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="CustomsCode">
+					<xs:annotation>
+						<xs:documentation>主管关区代码</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="6"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="TransPreId">
+					<xs:annotation>
+						<xs:documentation>统一编号</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="18"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="PreNo">
+					<xs:annotation>
+						<xs:documentation>转关单号</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="16"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="IEFlag">
+					<xs:annotation>
+						<xs:documentation>进出口标志:进出口方式：0:进口和出口 1:进口 2:出口</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="1"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TrnQueryListResponse">
+		<xs:annotation>
+			<xs:documentation>转关单查询响应数据</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="QueryResponseData" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>业务查询响应数据</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TransPreId">
+								<xs:annotation>
+									<xs:documentation>统一编号</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="18"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="PreNo">
+								<xs:annotation>
+									<xs:documentation>转关单号</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="16"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="DeclPort">
+								<xs:annotation>
+									<xs:documentation>主管关区代码</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="4"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="IEPort">
+								<xs:annotation>
+									<xs:documentation>进出口岸</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="4"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Status">
+								<xs:annotation>
+									<xs:documentation>转关单状态</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="1"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="RetExplain">
+								<xs:annotation>
+									<xs:documentation>回执详细信息</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="255"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="IEFlag">
+								<xs:annotation>
+									<xs:documentation>进出口岸</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="1"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TrnQueryDetailRequest">
+		<xs:annotation>
+			<xs:documentation>转关单详情查询请求数据</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="TransPreId">
+					<xs:annotation>
+						<xs:documentation>统一编号</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="18"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TrnStatisticRequest">
+		<xs:annotation>
+			<xs:documentation>业务统计请求数据</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="BeginDate">
+					<xs:annotation>
+						<xs:documentation>统计开始日期</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="8"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="EndDate">
+					<xs:annotation>
+						<xs:documentation>统计结束日期</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="8"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="PortNode">
+					<xs:annotation>
+						<xs:documentation>进出口方式：0:进口和出口 1:进口 2:出口</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="1"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="CopCode">
+					<xs:annotation>
+						<xs:documentation>企业组织机构代码</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="9"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:choice>
+					<xs:element name="InputOpId">
+						<xs:annotation>
+							<xs:documentation>录入员编号</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:maxLength value="13"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="AgentCode">
+						<xs:annotation>
+							<xs:documentation>申报单位海关编码</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:maxLength value="10"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+					<xs:element name="IsAll">
+						<xs:annotation>
+							<xs:documentation>是否统计全部；是：1，否：空</xs:documentation>
+						</xs:annotation>
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:maxLength value="1"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+				</xs:choice>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TrnStatisticResponse">
+		<xs:annotation>
+			<xs:documentation>业务统计响应数据</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="StatisticResponseData" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>业务统计响应数据</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Type">
+								<xs:annotation>
+									<xs:documentation>统计类型；1 直转转关单</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="1"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="InputOpId">
+								<xs:annotation>
+									<xs:documentation>录入员编号</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="13"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CountNum">
+								<xs:annotation>
+									<xs:documentation>录入数量</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="18"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="LNum">
+								<xs:annotation>
+									<xs:documentation>入库数量</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="18"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TrnMessage">
+		<xs:annotation>
+			<xs:documentation>转关单数据</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="TrnHead" type="trn:TrnHeadType">
+					<xs:annotation>
+						<xs:documentation>转关表头信息</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="TrnBillLists">
+					<xs:annotation>
+						<xs:documentation>转关提单信息</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TrnBillList" type="trn:TrnListType" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TrnContainers">
+					<xs:annotation>
+						<xs:documentation>转关集装箱信息</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TrnContainer" type="trn:TrnContainerType" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TrnGoods">
+					<xs:annotation>
+						<xs:documentation>转关商品信息</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TrnGood" type="trn:TrnGoodsType" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TrnContaGoods">
+					<xs:annotation>
+						<xs:documentation>转关集装箱商品装配信息</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TrnContaGood" type="trn:TrnContaGoodsType" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TrnState" type="trn:TrnStateType" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>转关单状态表</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="TrnSign" type="trn:TrnSignType">
+					<xs:annotation>
+						<xs:documentation>转关签名信息</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="TrnHeadType">
+		<xs:annotation>
+			<xs:documentation>直转表头信息</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TransPreId">
+				<xs:annotation>
+					<xs:documentation>外部网统一编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="18"/>
+						<xs:maxLength value="18"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PreNo">
+				<xs:annotation>
+					<xs:documentation>转关预录入号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="16"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ValidTime">
+				<xs:annotation>
+					<xs:documentation>预计运抵指运地时间</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ApplName">
+				<xs:annotation>
+					<xs:documentation>申报单位</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="60"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ApplCode">
+				<xs:annotation>
+					<xs:documentation>转关申报单位代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ContractorCode">
+				<xs:annotation>
+					<xs:documentation>转关承运单位代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Contractor">
+				<xs:annotation>
+					<xs:documentation>承运单位名称</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="60"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TrafWay">
+				<xs:annotation>
+					<xs:documentation>境内运输方式</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CustomsNo">
+				<xs:annotation>
+					<xs:documentation>境内运输工具编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TransName">
+				<xs:annotation>
+					<xs:documentation>境内运输工具名称</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="32"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="NativeVoyageNo">
+				<xs:annotation>
+					<xs:documentation>境内运输工具航次</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="32"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ContaEmptyCount">
+				<xs:annotation>
+					<xs:documentation>集装箱空箱数</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="14"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="InputOpId">
+				<xs:annotation>
+					<xs:documentation>录入员</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="13"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="InputTime">
+				<xs:annotation>
+					<xs:documentation>录入时间</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="14"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TrnMode">
+				<xs:annotation>
+					<xs:documentation>转关类型</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="2"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="GoodsNote">
+				<xs:annotation>
+					<xs:documentation>备注</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="IEFlag">
+				<xs:annotation>
+					<xs:documentation>进出口标志</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="RecvPort">
+				<xs:annotation>
+					<xs:documentation>进出口岸</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SendPort">
+				<xs:annotation>
+					<xs:documentation>申报口岸</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="4"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ESealFlag">
+				<xs:annotation>
+					<xs:documentation>电子关锁启用标志</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CopCode" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>操作企业组织机构代码</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ClientID" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>客户端ID</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="ContaCount">
+				<xs:annotation>
+					<xs:documentation>集装箱总数</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="14"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ContaIniCount">
+				<xs:annotation>
+					<xs:documentation>集装箱标箱数</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="14"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MftGoodsPiece">
+				<xs:annotation>
+					<xs:documentation>总件数</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="9"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="MftGrossWeight">
+				<xs:annotation>
+					<xs:documentation>总重量</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="19"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TrnType">
+				<xs:annotation>
+					<xs:documentation>转关单类型：1代表无纸申报，0或空为普通有纸申报</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ApplCodeScc">
+				<xs:annotation>
+					<xs:documentation>统一社会信用代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+						<xs:minLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TrnListType">
+		<xs:annotation>
+			<xs:documentation>直转提单信息</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="RecordNumber">
+				<xs:annotation>
+					<xs:documentation>记录序号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="1"/>
+						<xs:maxLength value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TrafMode">
+				<xs:annotation>
+					<xs:documentation>进出境运输方式</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ShipId">
+				<xs:annotation>
+					<xs:documentation>进出境运输工具编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="15"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ShipNameEn">
+				<xs:annotation>
+					<xs:documentation>进出境运输工具名称</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="19"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="VoyageNo">
+				<xs:annotation>
+					<xs:documentation>进出境运输工具航次</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="12"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="BillNo">
+				<xs:annotation>
+					<xs:documentation>提单号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="32"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="IEDate">
+				<xs:annotation>
+					<xs:documentation>实际进出境日期</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="8"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="EntryNo">
+				<xs:annotation>
+					<xs:documentation>报关单号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="18"/>
+						<xs:maxLength value="18"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PackNo">
+				<xs:annotation>
+					<xs:documentation>件数</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="9"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="GrossWt">
+				<xs:annotation>
+					<xs:documentation>重量</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="19"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ContaC">
+				<xs:annotation>
+					<xs:documentation>j集装箱数</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="9"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="OwnerName">
+				<xs:annotation>
+					<xs:documentation>收货人</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="70"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Note">
+				<xs:annotation>
+					<xs:documentation>备注</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TrnContainerType">
+		<xs:annotation>
+			<xs:documentation>直转集装箱信息</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="RecordNumber">
+				<xs:annotation>
+					<xs:documentation>提单记录序号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ContaSeqno">
+				<xs:annotation>
+					<xs:documentation>集装箱序号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ContaNo">
+				<xs:annotation>
+					<xs:documentation>集装箱号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="11"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TransName">
+				<xs:annotation>
+					<xs:documentation>境内运输工具名称</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="32"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TransWeight">
+				<xs:annotation>
+					<xs:documentation>运输工具实际重量</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="19"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ContaModel">
+				<xs:annotation>
+					<xs:documentation>集装箱规格</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:minLength value="0"/>
+						<xs:maxLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SealNo">
+				<xs:annotation>
+					<xs:documentation>电子关锁号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="128"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Conta1">
+				<xs:annotation>
+					<xs:documentation>备注</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="255"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="EsealId">
+				<xs:annotation>
+					<xs:documentation>关锁号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="128"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SealNum">
+				<xs:annotation>
+					<xs:documentation>关锁个数</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="9"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TrnGoodsType">
+		<xs:annotation>
+			<xs:documentation>直转商品信息</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="RecordNumber">
+				<xs:annotation>
+					<xs:documentation>提单记录序号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="GNo">
+				<xs:annotation>
+					<xs:documentation>商品序号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="9"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CodeTs">
+				<xs:annotation>
+					<xs:documentation>商品编码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="GName">
+				<xs:annotation>
+					<xs:documentation>商品名称及规格</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="50"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="PackType">
+				<xs:annotation>
+					<xs:documentation>包装</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="GoodsPiece">
+				<xs:annotation>
+					<xs:documentation>件数</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="9"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="GoodsAmount">
+				<xs:annotation>
+					<xs:documentation>数量</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="19"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="GoodsUnit">
+				<xs:annotation>
+					<xs:documentation>单位</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="GoodsWeight">
+				<xs:annotation>
+					<xs:documentation>重量</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="19"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="GoodsPrice">
+				<xs:annotation>
+					<xs:documentation>价格</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="19"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="GoodsCurr">
+				<xs:annotation>
+					<xs:documentation>币制</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TrnContaGoodsType">
+		<xs:annotation>
+			<xs:documentation>直转集装箱商品关联信息</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="RecordNumber">
+				<xs:annotation>
+					<xs:documentation>记录序号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="GNo">
+				<xs:annotation>
+					<xs:documentation>商品序号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="9"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ContaSeqno">
+				<xs:annotation>
+					<xs:documentation>集装箱序号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="3"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ContaGoodsCount">
+				<xs:annotation>
+					<xs:documentation>商品件数</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="9"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ContaGoodsWeight">
+				<xs:annotation>
+					<xs:documentation>商品重量</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="19"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ContaNo">
+				<xs:annotation>
+					<xs:documentation>集装箱号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="11"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TrnSignType">
+		<xs:annotation>
+			<xs:documentation>直转签名信息</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="Sign">
+				<xs:annotation>
+					<xs:documentation>转关单签名信息</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="IccardId" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>签名者卡号</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="IccardUnitCode" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>签名者组织机构代码</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SignDate" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>签名日期，自动导入需要提供该字段值</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="OperType" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>操作类型：A: 上载
+
+B: 暂存
+C: 申报
+</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CertSeqNo">
+				<xs:annotation>
+					<xs:documentation>签名证书号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="DomainId">
+				<xs:annotation>
+					<xs:documentation>签名人类型，签名人类型，上载人 1;申报人 2；录入人：3（表示暂存）</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:length value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="CopSeqNo">
+				<xs:annotation>
+					<xs:documentation>企业内部编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="18"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Note">
+				<xs:annotation>
+					<xs:documentation>备注</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="100"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="HostId" type="xs:string" minOccurs="0">
+				<xs:annotation>
+					<xs:documentation>客户端邮箱的HostId</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TrnStateType">
+		<xs:annotation>
+			<xs:documentation>直转状态表</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TrnStatus">
+				<xs:annotation>
+					<xs:documentation>转关单状态</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="TmpTransPreId">
+				<xs:annotation>
+					<xs:documentation>转关单暂存号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="ModNum" type="xs:string">
+				<xs:annotation>
+					<xs:documentation>修改次数</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="NoticeDate">
+				<xs:annotation>
+					<xs:documentation>回执通知日期</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="RetExplain">
+				<xs:annotation>
+					<xs:documentation>回执解释</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Extend_Field1">
+				<xs:annotation>
+					<xs:documentation>录入企业组织机构代码</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Extend_Field2">
+				<xs:annotation>
+					<xs:documentation>状态表中的扩展字段</xs:documentation>
+				</xs:annotation>
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="ESealFlag">
+							<xs:annotation>
+								<xs:documentation>电子关锁号</xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string"/>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="Others" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>其他扩展含义</xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:string"/>
+							</xs:simpleType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="TrnResponseType">
+		<xs:annotation>
+			<xs:documentation>转关单响应信息</xs:documentation>
+		</xs:annotation>
+		<xs:sequence>
+			<xs:element name="TransPreId">
+				<xs:annotation>
+					<xs:documentation>统一编号</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="18"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Status">
+				<xs:annotation>
+					<xs:documentation>转关单状态</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="1"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="TrnSaveResponse">
+		<xs:annotation>
+			<xs:documentation>转关单暂存响应信息</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="TrnResponseType" type="trn:TrnResponseType"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TrnDeclareResponse">
+		<xs:annotation>
+			<xs:documentation>转关单申报响应信息</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="TrnResponseType" type="trn:TrnResponseType"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TrnUploadResponse">
+		<xs:annotation>
+			<xs:documentation>转关单上载响应信息</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="TrnResponseType" type="trn:TrnResponseType"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TrnDownloadQueryRequest">
+		<xs:annotation>
+			<xs:documentation>转关单下载请求数据</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="DataType">
+					<xs:annotation>
+						<xs:documentation>数据类型</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="DownloadType">
+								<xs:annotation>
+									<xs:documentation>下载类型:ComDec 单个报关单下载; DecList 报关单列表查询</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="8"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="TransPreId">
+					<xs:annotation>
+						<xs:documentation>统一编号</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="18"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="PreNo">
+					<xs:annotation>
+						<xs:documentation>预录入号</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="16"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="CopCode">
+					<xs:annotation>
+						<xs:documentation>操作企业编码</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="10"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="CopName" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>操作企业名称</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="TypistNo">
+					<xs:annotation>
+						<xs:documentation>操作员编码</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:maxLength value="13"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="TypistName" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>操作员名称</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="SignData" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>对字符串"SeqNo||PreEntryId"进行加签后的字符串数据</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="CertNo" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>证书号</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TrnDownloadQueryResponse">
+		<xs:annotation>
+			<xs:documentation>转关单列表下载响应数据</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="DownloadData" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="PreNo">
+								<xs:annotation>
+									<xs:documentation>预录入号</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="16"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="TransPreId">
+								<xs:annotation>
+									<xs:documentation>统一编号</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="18"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Tradecode">
+								<xs:annotation>
+									<xs:documentation>经营单位编码</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="10"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="OwnerCode">
+								<xs:annotation>
+									<xs:documentation>收发货单位编码</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="10"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CustomsCode">
+								<xs:annotation>
+									<xs:documentation>申报地海关编码</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="4"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TrnDownloadResponse">
+		<xs:annotation>
+			<xs:documentation>转关单单个下载响应数据</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="TrnResponseType" type="trn:TrnResponseType"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TrnImportResponse">
+		<xs:annotation>
+			<xs:documentation>转关单导入服务响应数据</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="EportResult">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="SeqNo">
+								<xs:annotation>
+									<xs:documentation>转关单统一编号</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="18"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="CopSeqNo">
+								<xs:annotation>
+									<xs:documentation>企业内部编号</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="18"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="ResponseCode" type="xs:string" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>响应代码</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="ResponseMessage" type="xs:string" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>响应或错误信息</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="CusResult" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="TransNo">
+								<xs:annotation>
+									<xs:documentation>海关编号</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="16"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="NoticeDate">
+								<xs:annotation>
+									<xs:documentation>通知时间</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:length value="17"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Channel">
+								<xs:annotation>
+									<xs:documentation>处理结果</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:length value="1"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Note">
+								<xs:annotation>
+									<xs:documentation>审核备注</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="255"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
