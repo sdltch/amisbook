@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by hanwei (EMBRACE) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="AcmpFileDataResponse">
+		<xs:annotation>
+			<xs:documentation>存放随附单证文件数据</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="PocketId">
+					<xs:annotation>
+						<xs:documentation>业务单据唯一编号,生成规则：系统简称+去掉横杠的32位UUID+14位时间</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:minLength value="1"/>
+							<xs:maxLength value="128"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="SystemType">
+					<xs:annotation>
+						<xs:documentation>系统类型(系统简称)</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:minLength value="1"/>
+							<xs:maxLength value="128"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="FileType">
+					<xs:annotation>
+						<xs:documentation>文件类型，如pdf</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:minLength value="1"/>
+							<xs:maxLength value="16"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="FileName">
+					<xs:annotation>
+						<xs:documentation>用户实际上传的随附单证文件名称</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:minLength value="1"/>
+							<xs:maxLength value="512"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="CurPocket">
+					<xs:annotation>
+						<xs:documentation>当前包号，记录当前随附单证文件的序号</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:minLength value="1"/>
+							<xs:maxLength value="3"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="TotalPocket">
+					<xs:annotation>
+						<xs:documentation>总包数，记录一共有多少个随附单证文件</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:minLength value="1"/>
+							<xs:maxLength value="3"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="ResponseCode">
+					<xs:annotation>
+						<xs:documentation>响应码：1-附件上传成功 2-附件上传失败</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:minLength value="1"/>
+							<xs:maxLength value="3"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>				
+				<xs:element name="ResponseMessage">
+					<xs:annotation>
+						<xs:documentation>响应信息:上传成功时存放“上传附件成功”字样，上传失败时存放附件上传失败错误原因</xs:documentation>
+					</xs:annotation>
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:minLength value="1"/>
+							<xs:maxLength value="512"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>				
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

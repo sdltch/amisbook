@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2008 sp1 (http://www.altova.com) by hanwei (EMBRACE) -->
+<xs:schema xmlns="http://www.w3.org/2000/09/xmldsig#" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.w3.org/2000/09/xmldsig#" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="HDE_W3C_Common.xsd"/>
+	<xs:include schemaLocation="Common_ComplexType.xsd"/>
+	<xs:element name="Package">
+		<xs:annotation>
+			<xs:documentation>业务报文数据节点</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="EnvelopInfo"/>
+				<xs:element ref="DataInfo"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DataInfo">
+		<xs:annotation>
+			<xs:documentation>业务内容</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="BussinessData">
+					<xs:annotation>
+						<xs:documentation>存放业务数据</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="INV202">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="InvApprResult">
+											<xs:annotation>
+												<xs:documentation>清单生成报关单回执表头</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="invPreentNo">
+														<xs:annotation>
+															<xs:documentation>核注清单数据中心统一编号</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:maxLength value="64"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="businessId">
+														<xs:annotation>
+															<xs:documentation>核注清单编号</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:maxLength value="64"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="entrySeqNo">
+														<xs:annotation>
+															<xs:documentation>报关单统一编号</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:maxLength value="64"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="manageResult">
+														<xs:annotation>
+															<xs:documentation>处理结果:1-生成成功   2-生成失败</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:length value="1"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+													<xs:element name="createDate" type="DateTime">
+														<xs:annotation>
+															<xs:documentation>处理日期</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+													<xs:element name="reason">
+														<xs:annotation>
+															<xs:documentation>生成失败原因</xs:documentation>
+														</xs:annotation>
+														<xs:simpleType>
+															<xs:restriction base="xs:string">
+																<xs:maxLength value="529"/>
+															</xs:restriction>
+														</xs:simpleType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
